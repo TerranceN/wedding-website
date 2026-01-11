@@ -1,0 +1,36 @@
+{
+  "title-section": {
+    "paula-and-terrance": "Paula i Terrance",
+    "date": "September 12th, 2026",
+    "location": "Poland"
+  },
+  "intro-section": {
+    "title": "Witamy!",
+    "title-translation": "(Welcome!)",
+    "intro": "This is an introduction.\nWe are getting married in Poland.\n\nAnecdote, a little bit about us.\n\nWe can't wait to see you there!\n\nXOXO"
+  },
+  "timeline-section": {
+    "title": "Zapraszamy!",
+    "title-translation": "(You're Invited!)",
+    "slub": {
+      "title": "Ceremony",
+      "date-and-time": "Sept 12, 2026 | 5:00pm",
+      "location": "Old Castle Courtyard, Zywiec"
+    },
+    "wesele": {
+      "title": "Reception",
+      "date-and-time": "Sept 12, 2026 | 6:00pm",
+      "location": "Beskidian, Wegierska Gorka"
+    },
+    "poprawiny": {
+      "title": "Reception",
+      "date-and-time": "Sept 13, 2026 | 2:00pm",
+      "location": "Beskidian, Wegierska Gorka"
+    },
+    "what-else": {
+      "title": "What else?",
+      "date-and-time": "Week of Sept. 7",
+      "location": "Activities for foreign guests"
+    }
+  }
+}

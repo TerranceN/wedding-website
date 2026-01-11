@@ -1,0 +1,36 @@
+{
+  "title-section": {
+    "paula-and-terrance": "Paula & Terrance",
+    "date": "12 września 2026",
+    "location": "Polska"
+  },
+  "intro-section": {
+    "title": "Welcome!",
+    "title-translation": "(Witamy!)",
+    "intro": "To wstęp.\nBierzemy ślub w Polsce.\n\nAnegdota, trochę o nas.\n\nNie możemy się doczekać, żeby Was tam zobaczyć!\n\nXOXO"
+  },
+  "timeline-section": {
+    "title": "You're Invited!",
+    "title-translation": "(Zapraszamy!)",
+    "slub": {
+      "title": "Ślub",
+      "date-and-time": "12 września 2026 | 17:00",
+      "location": "Stary dziedziniec zamkowy, Żywiec"
+    },
+    "wesele": {
+      "title": "Wesele",
+      "date-and-time": "12 września 2026 | 18:00",
+      "location": "Beskidian, Wegierska Gorka"
+    },
+    "poprawiny": {
+      "title": "Poprawiny",
+      "date-and-time": "13 września 2026 | 14:00",
+      "location": "Beskidian, Wegierska Gorka"
+    },
+    "what-else": {
+      "title": "Co jeszcze?",
+      "date-and-time": "Tydzień 7 września",
+      "location": "Zajęcia dla gości zagranicznych"
+    }
+  }
+}
