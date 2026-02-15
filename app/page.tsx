@@ -344,14 +344,12 @@ function TimelineSection({id}: { id?: string }) {
           <Grid size={{lg: 4, xs:12}}>
             <Stack>
               {infoItems.map((item, index) => (
-                <>
-                  <Box key={index} sx={{ ...!isMediumOrSmaller && { height: "100px" } }}>
-                    <Stack height="100%" justifyContent="center" >
-                      {item.title}
-                      {item.additionalInfo}
-                    </Stack>
-                  </Box>
-                </>
+                <Box key={index} sx={{ ...!isMediumOrSmaller && { height: "100px" } }}>
+                  <Stack height="100%" justifyContent="center" >
+                    {item.title}
+                    {item.additionalInfo}
+                  </Stack>
+                </Box>
               ))}
             </Stack>
           </Grid>
