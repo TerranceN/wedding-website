@@ -102,7 +102,7 @@ function WeekAtAGlanceSection({ id }: { id?: string }) {
         background: "#CCC1B7",
       }}
     >
-      <Stack sx={{ margin: "0 10vw", marginTop: "2vh" }}>
+      <Stack sx={{ margin: "2vh 10vw" }}>
         <Typography
           fontFamily="Messaline"
           fontSize={{
@@ -211,7 +211,7 @@ function ADayInKrakowSection({ id }: { id?: string }) {
         background: "white",
       }}
     >
-      <Stack sx={{ margin: "0 10vw", marginTop: "2vh" }}>
+      <Stack sx={{ margin: "2vh 10vw" }}>
         <Typography
           fontFamily="Messaline"
           fontSize={{
