@@ -17,7 +17,7 @@ function Section(props: BoxProps) {
     <Box
       {...props}
       sx={{
-        minHeight: "100vh",
+        minHeight: "100dvh",
         ...props.sx,
       }}
     ></Box>
