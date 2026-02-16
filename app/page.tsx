@@ -21,7 +21,7 @@ function Section(props: BoxProps) {
     <Box
       {...props}
       sx={{
-        minHeight: "100dvh",
+        minHeight: "100svh",
         ...props.sx,
       }}
     ></Box>
@@ -117,7 +117,7 @@ function IntroSection({ id }: { id?: string }) {
     >
       <Stack
         width="100%"
-        minHeight="100dvh"
+        minHeight="100svh"
         justifyContent="center"
         alignItems="center"
       >
