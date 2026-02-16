@@ -128,12 +128,14 @@ function WeekAtAGlanceSection({ id }: { id?: string }) {
               xs: "10px",
             }}
             dayPadding={{
+              lg: "10px 0",
               sm: "15px 0",
               xs: 0,
             }}
             events={[
               {
                 day: {
+                  name: "Wednesday",
                   date: "Sept 9th, 2026",
                 },
                 events: [
@@ -146,6 +148,7 @@ function WeekAtAGlanceSection({ id }: { id?: string }) {
               },
               {
                 day: {
+                  name: "Thursday",
                   date: "Sept 10th, 2026",
                 },
                 events: [
@@ -158,6 +161,7 @@ function WeekAtAGlanceSection({ id }: { id?: string }) {
               },
               {
                 day: {
+                  name: "Friday",
                   date: "Sept 11th, 2026",
                 },
                 events: [
@@ -171,6 +175,7 @@ function WeekAtAGlanceSection({ id }: { id?: string }) {
               },
               {
                 day: {
+                  name: "Saturday",
                   date: "Sept 12th, 2026",
                 },
                 events: [
@@ -183,6 +188,7 @@ function WeekAtAGlanceSection({ id }: { id?: string }) {
               },
               {
                 day: {
+                  name: "Sunday",
                   date: "Sept 13th, 2026",
                 },
                 events: [
