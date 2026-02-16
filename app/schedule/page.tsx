@@ -57,6 +57,7 @@ function TitleSection({ id }: { id?: string }) {
             lg: 90,
           }}
           sx={{
+            width: "fit-content",
             textShadow: "1px 1px 8px #000000",
             marginBottom: "-10px",
             ...(isMediumOrSmaller
