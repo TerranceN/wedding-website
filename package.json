@@ -6,11 +6,13 @@
     "dev": "next dev",
     "build": "next build && touch out/.nojekyll",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "format": "prettier --write app"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.1",
+    "@mui/icons-material": "^7.3.8",
     "@mui/material": "^7.3.7",
     "next": "16.1.1",
     "next-export-i18n": "^3",
@@ -24,7 +26,9 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.1.1",
+    "prettier": "^3.8.1",
     "tailwindcss": "^4",
-    "typescript": "^5"
+    "typescript": "^5",
+    "typescript-eslint-language-service": "^5.0.5"
   }
 }

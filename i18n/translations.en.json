@@ -32,5 +32,24 @@
       "date-and-time": "Week of Sept. 7",
       "location": "Activities for foreign guests"
     }
+  },
+  "schedule": {
+    "title-section": {
+      "wedding-details": "Wedding Details"
+    },
+    "schedule-section": {
+      "title": "Wedding Schedule"
+    }
+  },
+  "international": {
+    "title-section": {
+      "title": "International Guests"
+    },
+    "week-at-a-glance-section": {
+      "title": "Week at a Glance"
+    },
+    "a-day-in-krakow-section": {
+      "title": "A Day in Krakow"
+    }
   }
 }
