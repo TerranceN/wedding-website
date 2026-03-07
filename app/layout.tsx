@@ -5,6 +5,7 @@ import { Suspense } from "react";
 import { ThemeProvider } from "@mui/material";
 import theme from "./theme";
 import NavigationBar from "./NavigationBar";
+import AutoLangSwitch from "./AutoLangSwitch";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -33,6 +34,7 @@ export default function RootLayout({
       >
         <ThemeProvider theme={theme}>
           <Suspense fallback="loading">
+            <AutoLangSwitch />
             <NavigationBar />
             {children}
           </Suspense>
