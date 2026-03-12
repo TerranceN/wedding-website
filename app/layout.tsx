@@ -6,6 +6,7 @@ import { ThemeProvider } from "@mui/material";
 import theme from "./theme";
 import NavigationBar from "./NavigationBar";
 import AutoLangSwitch from "./AutoLangSwitch";
+import ScrollToAnchor from "./ScrollToAnchor";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -35,6 +36,7 @@ export default function RootLayout({
         <ThemeProvider theme={theme}>
           <Suspense fallback="loading">
             <AutoLangSwitch />
+            <ScrollToAnchor />
             <NavigationBar />
             {children}
           </Suspense>

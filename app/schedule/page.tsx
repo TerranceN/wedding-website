@@ -2,6 +2,9 @@
 
 import {
   Box,
+  Grid,
+  List,
+  ListItem,
   Stack,
   Typography,
   useMediaQuery,
@@ -190,19 +193,27 @@ function ScheduleSection({ id }: { id?: string }) {
 }
 
 function CeremonySection({ id }: { id?: string }) {
-  return (
-    <Section
-      id={id}
-      sx={{
-        background: "#2D2B25",
-      }}
-    >
-      <Typography>TODO</Typography>
-    </Section>
-  );
-}
+  const { t } = useTranslation();
 
-function ReceptionSection({ id }: { id?: string }) {
+  const information = [
+    {
+      header: "Address",
+      info: "Zamkowa 2, 34-300 Żywiec, Poland",
+    },
+    {
+      header: "Time",
+      info: "17:00 - 17:45",
+    },
+    {
+      header: "Getting there",
+      info: "Shuttles will be available from Beskidian and parking is also available on-site. Details to come.",
+    },
+    {
+      header: "Notes",
+      info: "We will be having a symbolic wedding ceremony in the castle courtyard. Please dress to be outdoors.",
+    },
+  ];
+
   return (
     <Section
       id={id}
@@ -211,7 +222,236 @@ function ReceptionSection({ id }: { id?: string }) {
         color: "#2D2B25",
       }}
     >
-      <Typography>TODO</Typography>
+      <Stack sx={{ margin: "2vh 10vw", marginBottom: "40px" }}>
+        <Typography
+          fontFamily="Messaline"
+          fontSize={{
+            md: 80,
+            sm: 70,
+            xs: 50,
+          }}
+          whiteSpace="pre-line"
+          color="#2D2B25"
+        >
+          {t("schedule.ceremony-section.title")}
+        </Typography>
+        <Typography
+          fontSize={{
+            md: 24,
+            sm: 21,
+            xs: 18,
+          }}
+          whiteSpace="pre-line"
+          color="#2D2B25"
+          sx={{
+            marginTop: {
+              md: "-25px",
+              sm: "-20px",
+              xs: "-15px",
+            },
+            marginBottom: "20px",
+          }}
+        >
+          {t("schedule.ceremony-section.location")}
+        </Typography>
+        <Grid
+          container
+          spacing={2}
+          sx={{
+            "& p": {
+              fontSize: {
+                md: 18,
+                sm: 16,
+                xs: 16,
+              },
+            },
+          }}
+        >
+          <Grid size={{ md: 6, xs: 12 }}>
+            <img
+              src="/Images/StaryZamek.webp"
+              style={{ objectFit: "contain" }}
+            />
+          </Grid>
+          <Grid size={{ md: 6, xs: 12 }}>
+            <Stack spacing={2}>
+              {information.map(({ header, info }, idx) => (
+                <Stack key={idx}>
+                  <Typography fontWeight={600} textTransform="uppercase">
+                    {header}
+                  </Typography>
+                  <Typography>{info}</Typography>
+                </Stack>
+              ))}
+            </Stack>
+          </Grid>
+        </Grid>
+      </Stack>
+    </Section>
+  );
+}
+
+type Bullet = {
+  note: string;
+  details: string;
+  bullets?: Bullet[];
+};
+
+function BulletedList({ bullets }: { bullets: Bullet[] }) {
+  return (
+    <List
+      sx={{
+        listStyleType: "disc",
+        padding: 0,
+        pl: 4,
+      }}
+    >
+      {bullets.map(({ note, details, bullets: subBullets }, idx) => (
+        <ListItem
+          key={`$bullet-${idx}`}
+          sx={{
+            display: "list-item",
+            padding: 0,
+          }}
+        >
+          <Typography display="inline" fontWeight={600} marginRight="5px">
+            {note}:
+          </Typography>
+          <Typography display="inline">{details}</Typography>
+          {subBullets && <BulletedList bullets={subBullets} />}
+        </ListItem>
+      ))}
+    </List>
+  );
+}
+
+function ReceptionSection({ id }: { id?: string }) {
+  const { t } = useTranslation();
+
+  const information = [
+    {
+      header: "Address",
+      info: "Zamkowa 2, 34-300 Żywiec, Poland",
+    },
+    {
+      header: "Time",
+      bullets: [
+        {
+          note: "Reception",
+          details: "Saturday Sept. 12th 18:00 ~ 05:00",
+          bullets: [
+            {
+              note: "Cocktail hour",
+              details: "18:00",
+            },
+            {
+              note: "Entrance",
+              details: "19:00",
+            },
+            {
+              note: "Main Dinner",
+              details: "19:30",
+            },
+            {
+              note: "Second Dinner",
+              details: "~22:00",
+            },
+            {
+              note: "Late-Night Snack",
+              details: "~02:00",
+            },
+          ],
+        },
+        {
+          note: "Brunch",
+          details: "Sunday Sept. 13th 12:00 - 16:00",
+        },
+      ],
+    },
+    {
+      header: "Getting there",
+      info: "Shuttles will be available from the ceremony. More info to come.",
+    },
+    {
+      header: "Notes",
+      info: "Cocktail hour and brunch will take place in the outdoor gazebo.",
+    },
+  ];
+
+  return (
+    <Section
+      id={id}
+      sx={{
+        background: "#eeebe7",
+        color: "#2D2B25",
+      }}
+    >
+      <Stack sx={{ margin: "2vh 10vw", marginBottom: "40px" }}>
+        <Typography
+          fontFamily="Messaline"
+          fontSize={{
+            md: 80,
+            sm: 70,
+            xs: 50,
+          }}
+          whiteSpace="pre-line"
+          color="#2D2B25"
+        >
+          {t("schedule.reception-section.title")}
+        </Typography>
+        <Typography
+          fontSize={{
+            md: 24,
+            sm: 21,
+            xs: 18,
+          }}
+          whiteSpace="pre-line"
+          color="#2D2B25"
+          sx={{
+            marginTop: {
+              md: "-25px",
+              sm: "-20px",
+              xs: "-15px",
+            },
+            marginBottom: "20px",
+          }}
+        >
+          {t("schedule.reception-section.location")}
+        </Typography>
+        <Grid
+          container
+          spacing={2}
+          sx={{
+            "& *": {
+              fontSize: {
+                md: 18,
+                sm: 16,
+                xs: 16,
+              },
+            },
+          }}
+        >
+          <Grid size={{ md: 6, xs: 12 }}>
+            <Stack spacing={2}>
+              {information.map(({ header, info, bullets }, idx) => (
+                <Stack key={idx}>
+                  <Typography fontWeight={600} textTransform="uppercase">
+                    {header}
+                  </Typography>
+                  {info && <Typography>{info}</Typography>}
+                  {bullets && <BulletedList bullets={bullets} />}
+                </Stack>
+              ))}
+            </Stack>
+          </Grid>
+          <Grid size={{ md: 6, xs: 12 }}>
+            <img
+              src="/Images/Beskidian.webp"
+              style={{ objectFit: "contain" }}
+            />
+          </Grid>
+        </Grid>
+      </Stack>
     </Section>
   );
 }

@@ -7,6 +7,8 @@ import {
 } from "@mui/material";
 import { type ResponsiveStyleValue } from "@mui/system";
 import ListWithSeparators from "./ListWithSeparators";
+import { Launch } from "@mui/icons-material";
+import Link from "next/link";
 
 function ResponsiveSchedule({
   events,
@@ -23,6 +25,7 @@ function ResponsiveSchedule({
       location?: string;
       time?: string;
       notes?: string;
+      link?: string;
     }[];
   }[];
   spacing?: ResponsiveStyleValue<string | number>;
@@ -108,7 +111,23 @@ function ResponsiveSchedule({
                           {event.location}
                         </Typography>
                       )}
-                      {event.notes && <Typography>{event.notes}</Typography>}
+                      {event.notes && (
+                        <Typography>
+                          {event.notes}
+                          {event.link && (
+                            <Link href={event.link}>
+                              <Launch
+                                stroke="#0000EE"
+                                sx={{
+                                  marginLeft: "4px",
+                                  width: "16px",
+                                  height: "16px",
+                                }}
+                              />
+                            </Link>
+                          )}
+                        </Typography>
+                      )}
                     </Stack>
                   ) : (
                     <ListWithSeparators>
@@ -120,7 +139,23 @@ function ResponsiveSchedule({
                           {event.location}
                         </Typography>
                       )}
-                      {event.notes && <Typography>{event.notes}</Typography>}
+                      {event.notes && (
+                        <Typography>
+                          {event.notes}
+                          {event.link && (
+                            <Link href={event.link}>
+                              <Launch
+                                stroke="#0000EE"
+                                sx={{
+                                  marginLeft: "4px",
+                                  width: "16px",
+                                  height: "16px",
+                                }}
+                              />
+                            </Link>
+                          )}
+                        </Typography>
+                      )}
                     </ListWithSeparators>
                   )}
                 </Grid>,

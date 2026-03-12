@@ -39,6 +39,23 @@
     },
     "schedule-section": {
       "title": "Wedding Schedule"
+    },
+    "ceremony-section": {
+      "title": "Ceremony",
+      "location": "Żywiec Stary Zamek, Żywiec"
+    },
+    "reception-section": {
+      "title": "Reception & Brunch",
+      "location": "Beskidian, Węgierska Górka"
+    }
+  },
+  "other-events": {
+    "title-section": {
+      "other-events": "Other Events"
+    },
+    "schedule-section": {
+      "title": "Week at a Glance",
+      "description": "We’ve planned a few activities leading up to the wedding for friends, foreign guests, and those arriving at the hotel early. Your wedding invitation will list the events you are included on."
     }
   },
   "international": {
