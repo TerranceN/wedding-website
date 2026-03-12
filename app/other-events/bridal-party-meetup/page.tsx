@@ -19,36 +19,38 @@ export default function Page() {
   const { t } = useTranslation();
 
   return (
-    <Section
-      sx={{
-        background: "#CCC1B7",
-        color: "#2D2B25",
-      }}
-    >
-      <Stack sx={{ margin: "2vh 10vw" }}>
-        <Typography
-          fontFamily="Messaline"
-          fontSize={{
-            md: 80,
-            sm: 70,
-            xs: 50,
-          }}
-          whiteSpace="pre-line"
-          color="#2D2B25"
-        >
-          {t("other-events.bridal-party-meetup.title")}
-        </Typography>
-        <Stack
-          sx={{
-            background: "white",
-            padding: "4vw",
-            borderRadius: "2px",
-            marginTop: "20px",
-          }}
-        >
-          <Typography>TODO</Typography>
+    <Stack>
+      <Section
+        sx={{
+          background: "#CCC1B7",
+          color: "#2D2B25",
+        }}
+      >
+        <Stack sx={{ margin: "2vh 10vw" }}>
+          <Typography
+            fontFamily="Messaline"
+            fontSize={{
+              md: 80,
+              sm: 70,
+              xs: 50,
+            }}
+            whiteSpace="pre-line"
+            color="#2D2B25"
+          >
+            {t("other-events.bridal-party-meetup.title")}
+          </Typography>
+          <Stack
+            sx={{
+              background: "white",
+              padding: "4vw",
+              borderRadius: "2px",
+              marginTop: "20px",
+            }}
+          >
+            <Typography>TODO</Typography>
+          </Stack>
         </Stack>
-      </Stack>
-    </Section>
+      </Section>
+    </Stack>
   );
 }

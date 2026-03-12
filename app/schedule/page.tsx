@@ -3,8 +3,6 @@
 import {
   Box,
   Grid,
-  List,
-  ListItem,
   Stack,
   Typography,
   useMediaQuery,
@@ -13,7 +11,8 @@ import {
 } from "@mui/material";
 import { type ReactElement } from "react";
 import { useTranslation } from "next-export-i18n";
-import ResponsiveSchedule from "../components/ResponsiveSchedule";
+import ResponsiveSchedule from "@/app/components/ResponsiveSchedule";
+import BulletedList from "@/app/components/BulletedList";
 
 function Section(props: BoxProps) {
   return (
@@ -288,40 +287,6 @@ function CeremonySection({ id }: { id?: string }) {
         </Grid>
       </Stack>
     </Section>
-  );
-}
-
-type Bullet = {
-  note: string;
-  details: string;
-  bullets?: Bullet[];
-};
-
-function BulletedList({ bullets }: { bullets: Bullet[] }) {
-  return (
-    <List
-      sx={{
-        listStyleType: "disc",
-        padding: 0,
-        pl: 4,
-      }}
-    >
-      {bullets.map(({ note, details, bullets: subBullets }, idx) => (
-        <ListItem
-          key={`$bullet-${idx}`}
-          sx={{
-            display: "list-item",
-            padding: 0,
-          }}
-        >
-          <Typography display="inline" fontWeight={600} marginRight="5px">
-            {note}:
-          </Typography>
-          <Typography display="inline">{details}</Typography>
-          {subBullets && <BulletedList bullets={subBullets} />}
-        </ListItem>
-      ))}
-    </List>
   );
 }
 
