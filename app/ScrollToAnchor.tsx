@@ -1,17 +1,19 @@
 "use client";
 
-import { useEffect } from "react";
+import { PropsWithChildren, useEffect, useLayoutEffect } from "react";
 
-const ScrollToAnchor = () => {
-  useEffect(() => {
+const ScrollToAnchor = ({ children }: PropsWithChildren<{}>) => {
+  useLayoutEffect(() => {
     const { hash } = window.location;
     if (hash) {
-      const element = document.getElementById(hash);
+      const id = hash.slice(1);
+      let element = document.getElementById(id);
+      console.log("force scroll1", id, element);
       element?.scrollIntoView();
     }
   }, []);
 
-  return null;
+  return children;
 };
 
 export default ScrollToAnchor;

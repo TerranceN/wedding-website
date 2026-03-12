@@ -36,9 +36,8 @@ export default function RootLayout({
         <ThemeProvider theme={theme}>
           <Suspense fallback="loading">
             <AutoLangSwitch />
-            <ScrollToAnchor />
             <NavigationBar />
-            {children}
+            <ScrollToAnchor>{children}</ScrollToAnchor>
           </Suspense>
         </ThemeProvider>
       </body>
