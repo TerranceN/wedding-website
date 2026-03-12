@@ -62,13 +62,13 @@ function ResponsiveSchedule({
       {...events.map(({ day, events }) => (
         <Grid key={day.date} container rowSpacing="6px">
           <Grid size={{ lg: 2, md: 3, sm: 4, xs: 12 }}>
-            <Stack alignItems="center">
+            <Stack alignItems={{ sm: "center", xs: "right" }}>
               <Stack
                 direction={{ sm: "column", xs: "row" }}
                 spacing={{ sm: 0, xs: "6px" }}
                 sx={{
                   width: "fit-content",
-                  textAlign: "right",
+                  textAlign: day.image ? "center" : "right",
                   ...(dayPadding && {
                     padding: dayPadding,
                   }),
