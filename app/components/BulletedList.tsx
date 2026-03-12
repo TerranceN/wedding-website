@@ -1,7 +1,7 @@
 import { List, ListItem, Typography } from "@mui/material";
 
 export type Bullet = {
-  note: string;
+  note?: string;
   details: string;
   bullets?: Bullet[];
   extra?: React.ReactNode;
@@ -24,9 +24,11 @@ function BulletedList({ bullets }: { bullets: Bullet[] }) {
             padding: 0,
           }}
         >
-          <Typography display="inline" fontWeight={600} marginRight="5px">
-            {note}:
-          </Typography>
+          {note && (
+            <Typography display="inline" fontWeight={600} marginRight="5px">
+              {note}:
+            </Typography>
+          )}
           <Typography display="inline">{details}</Typography>
           {subBullets && <BulletedList bullets={subBullets} />}
           {extra}

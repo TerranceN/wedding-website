@@ -131,6 +131,18 @@ function ResponsiveSchedule({
                       {event.location && (
                         <Typography fontStyle="italic">
                           {event.location}
+                          {!event.notes && event.link && (
+                            <Link href={event.link}>
+                              <Launch
+                                stroke="#0000EE"
+                                sx={{
+                                  marginLeft: "4px",
+                                  width: "16px",
+                                  height: "16px",
+                                }}
+                              />
+                            </Link>
+                          )}
                         </Typography>
                       )}
                       {event.notes && (
@@ -159,6 +171,18 @@ function ResponsiveSchedule({
                       {event.location && (
                         <Typography fontStyle="italic">
                           {event.location}
+                          {!event.notes && event.link && (
+                            <Link href={event.link}>
+                              <Launch
+                                stroke="#0000EE"
+                                sx={{
+                                  marginLeft: "4px",
+                                  width: "16px",
+                                  height: "16px",
+                                }}
+                              />
+                            </Link>
+                          )}
                         </Typography>
                       )}
                       {event.notes && (
