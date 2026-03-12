@@ -87,7 +87,7 @@ function ResponsiveSchedule({
                   src={day.image}
                   style={{
                     objectFit: "contain",
-                    padding: "2vw",
+                    padding: "1vh 2vw",
                   }}
                 />
               )}

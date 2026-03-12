@@ -22,7 +22,7 @@ export default function Page() {
     <Stack>
       <Section
         sx={{
-          background: "#CCC1B7",
+          background: "white",
           color: "#2D2B25",
         }}
       >
@@ -41,13 +41,15 @@ export default function Page() {
           </Typography>
           <Stack
             sx={{
-              background: "white",
-              padding: "4vw",
-              borderRadius: "2px",
-              marginTop: "20px",
+              padding: "0 2vw",
             }}
+            spacing={2}
           >
-            <Typography>TODO</Typography>
+            <Typography>{t("other-events.welcome-drinks.details")}</Typography>
+            <img
+              src="/Images/Brewery.webp"
+              style={{ objectFit: "contain", padding: "20px 0" }}
+            />
           </Stack>
         </Stack>
       </Section>
