@@ -56,6 +56,18 @@
     "schedule-section": {
       "title": "Week at a Glance",
       "description": "We’ve planned a few activities leading up to the wedding for friends, foreign guests, and those arriving at the hotel early. Your wedding invitation will list the events you are included on."
+    },
+    "bridal-party-meetup": {
+      "title": "Bridal Party Meet-Up"
+    },
+    "a-day-in-krakow": {
+      "title": "A Day in Krakow"
+    },
+    "bachelor-ette": {
+      "title": "Bachelor/ette"
+    },
+    "welcome-drinks": {
+      "title": "Welcome Drinks"
     }
   },
   "international": {
