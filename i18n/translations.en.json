@@ -47,6 +47,33 @@
     "reception-section": {
       "title": "Reception & Brunch",
       "location": "Beskidian, Węgierska Górka"
+    },
+    "faq": {
+      "title": "Frequent Questions",
+      "transportation": {
+        "header": "Transportation",
+        "details": "<TODO>"
+      },
+      "accommodations": {
+        "header": "Accommodations",
+        "details": "Accommodations at Beskidian Hotel for the night of the wedding (Saturday 12th) are included. Details and room assignments will be provided after RSVP. If you are attending the bachelor/ette, an additional night at Beskidian will be included in the cost and RSVP. Otherwise, if you would like to arrive early or extend your stay at Beskidian, please reach out directly to the hotel: <TODO>"
+      },
+      "dress-code": {
+        "header": "Dress Code",
+        "details": "Cocktail attire. Be prepared for dancing and for outdoor weather. The ceremony will be held in a castle courtyard with uneven cobblestone and cocktail hour will be held on a lawn. Weather in Poland in September is typically pleasant but can vary between hot, cold and rainy.\n\nGeneral guidance:\nAnkle to knee length dresses\nSuit pants and button down shirt. Suit jackets, vests, ties or bow-ties optional.\nClassy but comfortable shoes for dancing and outdoor celebrations.\nShawl, additional layer and/or umbrella recommended in case of rain or cool weather.\n\nPlease avoid wearing white, cream or overly bright/vivid colors due to the historical setting of the ceremony.\n\nDress code examples:"
+      },
+      "registry": {
+        "header": "Registry",
+        "details": "<TODO>"
+      },
+      "getting-there": {
+        "header": "Getting There",
+        "details": "<TODO>"
+      },
+      "children": {
+        "header": "Children and Plus One's",
+        "details": "<TODO>"
+      }
     }
   },
   "other-events": {

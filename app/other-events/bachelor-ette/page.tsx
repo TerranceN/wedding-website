@@ -196,7 +196,7 @@ export default function Page() {
                       "Extra luggage can be dropped off for storage at Beskidian prior to the hike.",
                   },
                   {
-                    note: "Accomodations",
+                    note: "Accommodations",
                     details:
                       "Rysianka is a traditional Polish mountain shelter with rustic, hostel-style accomodations. Sheets and bedding will be provided but towels may not be. Charger plugs are limitted and may not be available in all rooms; a portable battery is recommended. Rooms will be assigned after RSVP. ",
                   },

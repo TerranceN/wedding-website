@@ -123,7 +123,7 @@ export default function Page() {
               <BulletedList
                 bullets={[
                   {
-                    note: "Accomodations",
+                    note: "Accommodations",
                     details:
                       "Please book accomodations individually. We recommend booking for at least two nights from Sept 8th - Sept 10th in or around the Krakow Old Town, Stradom or Kazimierz. Please arrive in Europe at least 24 hours early to avoid jet-lag during events.",
                     extra: (

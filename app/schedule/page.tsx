@@ -250,6 +250,7 @@ function CeremonySection({ id }: { id?: string }) {
             },
             marginBottom: "20px",
           }}
+          fontStyle="italic"
         >
           {t("schedule.ceremony-section.location")}
         </Typography>
@@ -380,6 +381,7 @@ function ReceptionSection({ id }: { id?: string }) {
             },
             marginBottom: "20px",
           }}
+          fontStyle="italic"
         >
           {t("schedule.reception-section.location")}
         </Typography>
@@ -421,6 +423,58 @@ function ReceptionSection({ id }: { id?: string }) {
   );
 }
 
+function FAQSection({ id }: { id?: string }) {
+  const { t } = useTranslation();
+
+  return (
+    <Section
+      id={id}
+      sx={{
+        background: "white",
+        color: "#2D2B25",
+      }}
+    >
+      <Stack sx={{ margin: "2vh 10vw", marginBottom: "40px" }} spacing={4}>
+        <Typography
+          fontFamily="Messaline"
+          fontSize={{
+            md: 80,
+            sm: 70,
+            xs: 50,
+          }}
+          whiteSpace="pre-line"
+          color="#2D2B25"
+        >
+          {t("schedule.faq.title")}
+        </Typography>
+        {[
+          "transportation",
+          "accommodations",
+          "dress-code",
+          "registry",
+          "getting-there",
+          "children",
+        ].map((section) => (
+          <Box>
+            <Typography fontWeight={600} textTransform="uppercase">
+              {t(`schedule.faq.${section}.header`)}
+            </Typography>
+            <Typography whiteSpace="pre-line">
+              {t(`schedule.faq.${section}.details`)}
+            </Typography>
+            {section === "dress-code" && (
+              <img
+                src="/Images/DressCode.webp"
+                style={{ objectFit: "contain", padding: "20px" }}
+              />
+            )}
+          </Box>
+        ))}
+      </Stack>
+    </Section>
+  );
+}
+
 export default function Home() {
   const sections: {
     [key: string]: {
@@ -443,6 +497,10 @@ export default function Home() {
     reception: {
       component: ReceptionSection,
       label: "Reception",
+    },
+    faq: {
+      component: FAQSection,
+      label: "FAQ",
     },
   };
 

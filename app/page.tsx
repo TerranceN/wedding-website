@@ -222,7 +222,7 @@ function TimelineSection({ id }: { id?: string }) {
       additionalInfo: "Romantic cocktail",
     },
     {
-      title: "Accomodation",
+      title: "Accommodation",
       additionalInfo: "One night as Beskidian provided (Sept. 12)",
     },
     {
