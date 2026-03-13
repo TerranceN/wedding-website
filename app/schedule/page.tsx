@@ -101,7 +101,7 @@ function ScheduleSection({ id }: { id?: string }) {
     <Section
       id={id}
       sx={{
-        background: "#CCC1B7",
+        background: "#eeebe7",
       }}
     >
       <Stack sx={{ margin: "2vh 10vw" }}>
@@ -140,24 +140,20 @@ function ScheduleSection({ id }: { id?: string }) {
                   {
                     name: "Ceremony",
                     location: "Zywiec Stary Zamek",
-                    time: "16:45",
-                    notes: "Please arrive early for the ceremony at 17:00",
+                    time: "17:00",
                   },
                   {
                     name: "Reception Cocktail Hour",
                     location: "Beskidian Outdoor Gazebo",
                     time: "18:00",
-                    notes: "Drinks and appetizers",
                   },
                   {
                     name: "Reception",
                     location: "Beskidian Main Hall",
                     time: "19:00",
-                    notes: "Food, dancing, and celebration!",
                   },
                   {
                     name: "Night End",
-                    location: "Zywiec Stary Zamek",
                     time: "05:00",
                     notes: "Feel free to retire earlier",
                   },
@@ -173,13 +169,11 @@ function ScheduleSection({ id }: { id?: string }) {
                     name: "Brunch",
                     location: "Beskidian Outdoor Gazebo",
                     time: "12:00",
-                    notes: "Food, drinks, and goodbyes",
                   },
                   {
-                    name: "Night End",
-                    location: undefined,
-                    time: "16:30",
-                    notes: "Feel free to retire earlier",
+                    name: "Goodbyes",
+                    time: "16:00",
+                    notes: "Feel free to leave earlier",
                   },
                 ],
               },
