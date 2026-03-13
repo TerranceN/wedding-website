@@ -45,11 +45,11 @@ function ResponsiveSchedule({
         "*": {
           color: "#2D2B25",
           fontSize: {
-            xl: "18px",
-            lg: "16px",
-            md: "18px",
-            sm: "16px",
-            xs: "16px",
+            xl: "18px !important",
+            lg: "16px !important",
+            md: "18px !important",
+            sm: "16px !important",
+            xs: "16px !important",
           },
 
           whiteSpace: {
