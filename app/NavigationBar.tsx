@@ -1,13 +1,16 @@
 "use client";
 
-import { AppBar, Box, Button, Drawer, Stack, Toolbar } from "@mui/material";
+import { AppBar, Box, Button, Drawer, List, ListItem, Stack, Switch, Toolbar, Typography } from "@mui/material";
 import { Menu } from "@mui/icons-material";
 import { useState } from "react";
-import { LanguageSwitcher } from "next-export-i18n";
+import { useSelectedLanguage } from "next-export-i18n";
 import Link from "next/link";
+import useSetLang from "@/app/hooks/useSetLang";
 
 function NavigationBar() {
   const [open, toggleDrawer] = useState(false);
+  const { lang } = useSelectedLanguage();
+  const setLang = useSetLang();
 
   return (
     <AppBar sx={{ left: 0, width: "100vw", background: "none" }} elevation={0}>
@@ -49,11 +52,38 @@ function NavigationBar() {
                 justifyContent: "flex-end",
               }}
             >
-              <Link href="/">Home</Link>
-              <Link href="/schedule#schedule">Schedule</Link>
-              <Link href="/international">International Guests</Link>
-              <LanguageSwitcher lang="pl">PL</LanguageSwitcher>
-              <LanguageSwitcher lang="en">EN</LanguageSwitcher>
+              <List>
+                <ListItem><Link href="/">Home</Link></ListItem>
+                <ListItem><Link href="/schedule">Wedding Details</Link></ListItem>
+                <ListItem>
+                  <Stack>
+                    <Link href="/other-events">Other Events</Link>
+                    <List>
+                      <ListItem><Link href="/other-events/bridal-party-meetup">Bridal Party Meet-Up (Sept 8)</Link></ListItem>
+                      <ListItem><Link href="/other-events/a-day-in-krakow">A Day in Krakow (Sept 9)</Link></ListItem>
+                      <ListItem><Link href="/other-events/bachelor-ette">Bachelor/ette (Sept 10)</Link></ListItem>
+                      <ListItem><Link href="/other-events/welcome-drinks">Welcome Drinks (Sept 11)</Link></ListItem>
+                    </List>
+                  </Stack>
+                </ListItem>
+                <ListItem><Link href="/international">International FAQ</Link></ListItem>
+              </List>
+              <Stack direction="row" alignItems="center" sx={{ paddingLeft: "16px" }} >
+                <Typography>EN</Typography>
+                <Switch
+                  checked={lang === "pl"}
+                  onChange={(_evt, checked) => {
+                    console.log("$$$ onChange", checked, lang)
+                    if (checked) {
+                      setLang("pl");
+                    } else {
+                      setLang("en");
+                    }
+                  }}
+                  slotProps={{ input: { 'aria-label': 'controlled' } }}
+                />
+                <Typography>PL</Typography>
+              </Stack>
             </Stack>
           </Box>
         </Drawer>
