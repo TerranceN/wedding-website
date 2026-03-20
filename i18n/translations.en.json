@@ -1,4 +1,39 @@
 {
+  "home": "Home",
+  "common": {
+    "dates": {
+      "tuesday": {
+        "name": "Tuesday",
+        "date": "Sept 8th, 2026",
+        "short": "Tue Sept 8"
+      },
+      "wednesday": {
+        "name": "Wednesday",
+        "date": "Sept 9th, 2026",
+        "short": "Wed Sept 9"
+      },
+      "thursday": {
+        "name": "Thursday",
+        "date": "Sept 10th, 2026",
+        "short": "Thu Sept 10"
+      },
+      "friday": {
+        "name": "Friday",
+        "date": "Sept 11th, 2026",
+        "short": "Fri Sept 11"
+      },
+      "saturday": {
+        "name": "Saturday",
+        "date": "Sept 12th, 2026",
+        "short": "Sat Sept 12"
+      },
+      "sunday": {
+        "name": "Sunday",
+        "date": "Sept 13th, 2026",
+        "short": "Sun Sept 13"
+      }
+    }
+  },
   "title-section": {
     "paula-and-terrance": "Paula i Terrance",
     "date": "September 12th, 2026",
@@ -7,25 +42,25 @@
   "intro-section": {
     "title": "Witamy!",
     "title-translation": "(Welcome!)",
-    "intro": "This is an introduction.\nWe are getting married in Poland.\n\nAnecdote, a little bit about us.\n\nWe can't wait to see you there!\n\nXOXO"
+    "intro": "We’re getting married in Poland to celebrate our shared heritage and our future together.\n\nWe hope you can join us!\n\n"
   },
   "timeline-section": {
     "title": "Zapraszamy!",
     "title-translation": "(You're Invited!)",
     "slub": {
       "title": "Ceremony",
-      "date-and-time": "Sept 12, 2026 | 5:00pm",
-      "location": "Old Castle Courtyard, Zywiec"
+      "date-and-time": "Sept 12, 2026 | 4:45pm",
+      "location": "Old Castle Courtyard, Żywiec"
     },
     "wesele": {
       "title": "Reception",
       "date-and-time": "Sept 12, 2026 | 6:00pm",
-      "location": "Beskidian, Wegierska Gorka"
+      "location": "Beskidian, Węgierska Górka"
     },
     "poprawiny": {
-      "title": "Reception",
-      "date-and-time": "Sept 13, 2026 | 2:00pm",
-      "location": "Beskidian, Wegierska Gorka"
+      "title": "After Party",
+      "date-and-time": "Sept 13, 2026 | 1:00pm",
+      "location": "Beskidian, Węgierska Górka"
     },
     "what-else": {
       "title": "What else?",
@@ -37,16 +72,64 @@
     "title-section": {
       "wedding-details": "Wedding Details"
     },
-    "schedule-section": {
-      "title": "Wedding Schedule"
-    },
     "ceremony-section": {
       "title": "Ceremony",
-      "location": "Żywiec Stary Zamek, Żywiec"
+      "location": "Żywiec Stary Zamek, Żywiec",
+      "address": {
+        "header": "Address"
+      },
+      "time": {
+        "header": "Time"
+      },
+      "getting-there": {
+        "header": "Getting There",
+        "info": "Shuttles will be available from Beskidian and parking is also available on-site. Details to come."
+      },
+      "notes": {
+        "header": "Notes",
+        "info": "We will be having a symbolic wedding ceremony in the castle courtyard. Please dress to be outdoors."
+      }
     },
     "reception-section": {
       "title": "Reception & Brunch",
-      "location": "Beskidian, Węgierska Górka"
+      "location": "Beskidian, Węgierska Górka",
+      "address": {
+        "header": "Address"
+      },
+      "time": {
+        "header": "Time",
+        "reception": {
+          "note": "Reception",
+          "details": "Saturday Sept. 12th 18:00 ~ 05:00",
+          "cocktail-hour": {
+            "note": "Cocktail hour"
+          },
+          "entrance": {
+            "note": "Entrance"
+          },
+          "main-dinner": {
+            "note": "Main Dinner"
+          },
+          "second-dinner": {
+            "note": "Second Dinner"
+          },
+          "snack": {
+            "note": "Late-Night Snack"
+          }
+        },
+        "brunch": {
+          "note": "Brunch",
+          "details": "Sunday Sept. 13th 12:00 - 16:00"
+        }
+      },
+      "getting-there": {
+        "header": "Getting There",
+        "info": "Shuttles will be available from the ceremony. More info to come."
+      },
+      "notes": {
+        "header": "Notes",
+        "info": "Cocktail hour and brunch will take place in the outdoor gazebo."
+      }
     },
     "faq": {
       "title": "Frequent Questions",

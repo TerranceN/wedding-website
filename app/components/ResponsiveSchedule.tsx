@@ -10,6 +10,43 @@ import ListWithSeparators from "./ListWithSeparators";
 import { Launch } from "@mui/icons-material";
 import Link from "next/link";
 
+const EventNameWithLink = ({
+  event,
+}: {
+  event: {
+    name: string;
+    link?: string;
+  };
+}) => (
+  <>
+    {event.link ? (
+      <Link href={event.link}>
+        <Stack direction="row" alignItems="center">
+          <Typography
+            fontWeight={600}
+            textTransform="uppercase"
+            sx={{ textDecoration: "underline" }}
+          >
+            {event.name}
+          </Typography>
+          <Launch
+            stroke="#2D2B25"
+            sx={{
+              marginLeft: "4px",
+              width: "16px",
+              height: "16px",
+            }}
+          />
+        </Stack>
+      </Link>
+    ) : (
+      <Typography fontWeight={600} textTransform="uppercase">
+        {event.name}
+      </Typography>
+    )}
+  </>
+);
+
 function ResponsiveSchedule({
   events,
   spacing,
@@ -125,83 +162,23 @@ function ResponsiveSchedule({
                 >
                   {isLargeOrSmaller ? (
                     <Stack spacing="2px">
-                      <Typography fontWeight={600} textTransform="uppercase">
-                        {event.name}
-                      </Typography>
+                      <EventNameWithLink event={event} />
                       {event.location && (
                         <Typography fontStyle="italic">
                           {event.location}
-                          {!event.notes && event.link && (
-                            <Link href={event.link}>
-                              <Launch
-                                stroke="#0000EE"
-                                sx={{
-                                  marginLeft: "4px",
-                                  width: "16px",
-                                  height: "16px",
-                                }}
-                              />
-                            </Link>
-                          )}
                         </Typography>
                       )}
-                      {event.notes && (
-                        <Typography>
-                          {event.notes}
-                          {event.link && (
-                            <Link href={event.link}>
-                              <Launch
-                                stroke="#0000EE"
-                                sx={{
-                                  marginLeft: "4px",
-                                  width: "16px",
-                                  height: "16px",
-                                }}
-                              />
-                            </Link>
-                          )}
-                        </Typography>
-                      )}
+                      {event.notes && <Typography>{event.notes}</Typography>}
                     </Stack>
                   ) : (
                     <ListWithSeparators>
-                      <Typography fontWeight={600} textTransform="uppercase">
-                        {event.name}
-                      </Typography>
+                      <EventNameWithLink event={event} />
                       {event.location && (
                         <Typography fontStyle="italic">
                           {event.location}
-                          {!event.notes && event.link && (
-                            <Link href={event.link}>
-                              <Launch
-                                stroke="#0000EE"
-                                sx={{
-                                  marginLeft: "4px",
-                                  width: "16px",
-                                  height: "16px",
-                                }}
-                              />
-                            </Link>
-                          )}
                         </Typography>
                       )}
-                      {event.notes && (
-                        <Typography>
-                          {event.notes}
-                          {event.link && (
-                            <Link href={event.link}>
-                              <Launch
-                                stroke="#0000EE"
-                                sx={{
-                                  marginLeft: "4px",
-                                  width: "16px",
-                                  height: "16px",
-                                }}
-                              />
-                            </Link>
-                          )}
-                        </Typography>
-                      )}
+                      {event.notes && <Typography>{event.notes}</Typography>}
                     </ListWithSeparators>
                   )}
                 </Grid>,

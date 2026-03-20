@@ -1,13 +1,25 @@
 "use client";
 
-import { AppBar, Box, Button, Drawer, List, ListItem, Stack, Switch, Toolbar, Typography } from "@mui/material";
+import {
+  AppBar,
+  Box,
+  Button,
+  Drawer,
+  List,
+  ListItem,
+  Stack,
+  Switch,
+  Toolbar,
+  Typography,
+} from "@mui/material";
 import { Menu } from "@mui/icons-material";
 import { useState } from "react";
-import { useSelectedLanguage } from "next-export-i18n";
+import { useSelectedLanguage, useTranslation } from "next-export-i18n";
 import Link from "next/link";
 import useSetLang from "@/app/hooks/useSetLang";
 
 function NavigationBar() {
+  const { t } = useTranslation();
   const [open, toggleDrawer] = useState(false);
   const { lang } = useSelectedLanguage();
   const setLang = useSetLang();
@@ -53,37 +65,72 @@ function NavigationBar() {
               }}
             >
               <List>
-                <ListItem><Link href="/">Home</Link></ListItem>
-                <ListItem><Link href="/schedule">Wedding Details</Link></ListItem>
+                <ListItem>
+                  <Link href="/">{t("home")}</Link>
+                </ListItem>
+                <ListItem>
+                  <Link href="/schedule">
+                    {t("schedule.title-section.wedding-details")}
+                  </Link>
+                </ListItem>
                 <ListItem>
                   <Stack>
-                    <Link href="/other-events">Other Events</Link>
+                    <Link href="/other-events">
+                      {t("other-events.title-section.other-events")}
+                    </Link>
                     <List>
-                      <ListItem><Link href="/other-events/bridal-party-meetup">Bridal Party Meet-Up (Sept 8)</Link></ListItem>
-                      <ListItem><Link href="/other-events/a-day-in-krakow">A Day in Krakow (Sept 9)</Link></ListItem>
-                      <ListItem><Link href="/other-events/bachelor-ette">Bachelor/ette (Sept 10)</Link></ListItem>
-                      <ListItem><Link href="/other-events/welcome-drinks">Welcome Drinks (Sept 11)</Link></ListItem>
+                      <ListItem>
+                        <Link href="/other-events/bridal-party-meetup">
+                          {t("other-events.bridal-party-meetup.title")}
+                        </Link>
+                      </ListItem>
+                      <ListItem>
+                        <Link href="/other-events/a-day-in-krakow">
+                          {t("other-events.a-day-in-krakow.title")}
+                        </Link>
+                      </ListItem>
+                      <ListItem>
+                        <Link href="/other-events/bachelor-ette">
+                          {t("other-events.bachelor-ette.title")}
+                        </Link>
+                      </ListItem>
+                      <ListItem>
+                        <Link href="/other-events/welcome-drinks">
+                          {t("other-events.welcome-drinks.title")}
+                        </Link>
+                      </ListItem>
                     </List>
                   </Stack>
                 </ListItem>
-                <ListItem><Link href="/international">International FAQ</Link></ListItem>
+                <ListItem>
+                  <Link href="/international">
+                    {t("international.title-section.title")}
+                  </Link>
+                </ListItem>
               </List>
-              <Stack direction="row" alignItems="center" sx={{ paddingLeft: "16px" }} >
+              <Stack
+                direction="row"
+                alignItems="center"
+                sx={{ paddingLeft: "16px" }}
+              >
                 <Typography>EN</Typography>
                 <Switch
                   checked={lang === "pl"}
                   onChange={(_evt, checked) => {
-                    console.log("$$$ onChange", checked, lang)
                     if (checked) {
                       setLang("pl");
                     } else {
                       setLang("en");
                     }
                   }}
-                  slotProps={{ input: { 'aria-label': 'controlled' } }}
+                  slotProps={{ input: { "aria-label": "controlled" } }}
                 />
                 <Typography>PL</Typography>
               </Stack>
+              <Typography sx={{ padding: "0 16px" }}>
+                Polish translations not available on pages for international
+                guests
+              </Typography>
             </Stack>
           </Box>
         </Drawer>

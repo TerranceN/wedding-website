@@ -8,8 +8,9 @@ const ScrollToAnchor = ({ children }: PropsWithChildren<{}>) => {
     if (hash) {
       const id = hash.slice(1);
       let element = document.getElementById(id);
-      console.log("force scroll1", id, element);
-      element?.scrollIntoView();
+      setTimeout(() => {
+        element?.scrollIntoView();
+      }, 0);
     }
   }, []);
 

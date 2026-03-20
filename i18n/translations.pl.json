@@ -1,4 +1,39 @@
 {
+  "home": "Główna",
+  "common": {
+    "dates": {
+      "tuesday": {
+        "name": "Wtorek",
+        "date": "8 wrz 2026 r.",
+        "short": "Wt. wrz 8"
+      },
+      "wednesday": {
+        "name": "Środa",
+        "date": "9 wrz 2026 r.",
+        "short": "Śr. wrz 9"
+      },
+      "thursday": {
+        "name": "Czwartek",
+        "date": "10 wrz 2026 r.",
+        "short": "Cz. wrz 10"
+      },
+      "friday": {
+        "name": "Piątek",
+        "date": "11 wrz 2026 r.",
+        "short": "Pt. wrz 11"
+      },
+      "saturday": {
+        "name": "Sobota",
+        "date": "12 wrz 2026 r.",
+        "short": "So. wrz 12"
+      },
+      "sunday": {
+        "name": "Niedziela",
+        "date": "13 wrz 2026 r.",
+        "short": "Nd. wrz 13"
+      }
+    }
+  },
   "title-section": {
     "paula-and-terrance": "Paula & Terrance",
     "date": "12 września 2026",
@@ -7,30 +42,154 @@
   "intro-section": {
     "title": "Welcome!",
     "title-translation": "(Witamy!)",
-    "intro": "To wstęp.\nBierzemy ślub w Polsce.\n\nAnegdota, trochę o nas.\n\nNie możemy się doczekać, żeby Was tam zobaczyć!\n\nXOXO"
+    "intro": "Bierzemy ślub w Polsce, aby uczcić nasze wspólne dziedzictwo i wspólną przyszłość.\n\nMamy nadzieję, że do nas dołączysz!"
   },
   "timeline-section": {
     "title": "You're Invited!",
     "title-translation": "(Zapraszamy!)",
     "slub": {
       "title": "Ślub",
-      "date-and-time": "12 września 2026 | 17:00",
+      "date-and-time": "12 września 2026 | 16:45",
       "location": "Stary dziedziniec zamkowy, Żywiec"
     },
     "wesele": {
       "title": "Wesele",
       "date-and-time": "12 września 2026 | 18:00",
-      "location": "Beskidian, Wegierska Gorka"
+      "location": "Beskidian, Węgierska Górka"
     },
     "poprawiny": {
       "title": "Poprawiny",
-      "date-and-time": "13 września 2026 | 14:00",
-      "location": "Beskidian, Wegierska Gorka"
+      "date-and-time": "13 września 2026 | 13:00",
+      "location": "Beskidian, Węgierska Górka"
     },
     "what-else": {
       "title": "Co jeszcze?",
       "date-and-time": "Tydzień 7 września",
       "location": "Zajęcia dla gości zagranicznych"
+    }
+  },
+  "schedule": {
+    "title-section": {
+      "wedding-details": "Szczegóły ślubu"
+    },
+    "ceremony-section": {
+      "title": "Ślub",
+      "location": "Żywiec Stary Zamek, Żywiec",
+      "address": {
+        "header": "Adres"
+      },
+      "time": {
+        "header": "Czas"
+      },
+      "getting-there": {
+        "header": "Dotarcie tam",
+        "info": "Autobusy będą dostępne z Beskidian, a parking jest również dostępny na miejscu. Szczegóły wkrótce."
+      },
+      "notes": {
+        "header": "Notatki",
+        "info": "Symboliczna ceremonia zaślubin odbędzie się na dziedzińcu zamkowym. Prosimy o ubranie się na zewnątrz."
+      }
+    },
+    "reception-section": {
+      "title": "Wesele & Poprawiny",
+      "location": "Beskidian, Węgierska Górka",
+      "address": {
+        "header": "Adres"
+      },
+      "time": {
+        "header": "Czas",
+        "reception": {
+          "note": "Wesele",
+          "details": "Sobota 12 września 18:00 ~ 05:00",
+          "cocktail-hour": {
+            "note": "Godzina koktajlowa"
+          },
+          "entrance": {
+            "note": "Wejście"
+          },
+          "main-dinner": {
+            "note": "Główna Kolacja"
+          },
+          "second-dinner": {
+            "note": "Druga Kolacja"
+          },
+          "snack": {
+            "note": "Przekąska na Późną Noc"
+          }
+        },
+        "brunch": {
+          "note": "Poprawiny",
+          "details": "Niedziela 13 września 12:00 - 16:00"
+        }
+      },
+      "getting-there": {
+        "header": "Dotarcie tam",
+        "info": "Z ceremonii będzie można skorzystać z transportu wahadłowego. Więcej informacji wkrótce."
+      },
+      "notes": {
+        "header": "Notatki",
+        "info": "Przyjęcie koktajlowe i brunch odbędą się w altanie na świeżym powietrzu."
+      }
+    },
+    "faq": {
+      "title": "Często zadawane pytania",
+      "transportation": {
+        "header": "Transport",
+        "details": "<TODO>"
+      },
+      "accommodations": {
+        "header": "Accommodations",
+        "details": "Accommodations at Beskidian Hotel for the night of the wedding (Saturday 12th) are included. Details and room assignments will be provided after RSVP. If you are attending the bachelor/ette, an additional night at Beskidian will be included in the cost and RSVP. Otherwise, if you would like to arrive early or extend your stay at Beskidian, please reach out directly to the hotel: <TODO>"
+      },
+      "dress-code": {
+        "header": "Dress Code",
+        "details": "Cocktail attire. Be prepared for dancing and for outdoor weather. The ceremony will be held in a castle courtyard with uneven cobblestone and cocktail hour will be held on a lawn. Weather in Poland in September is typically pleasant but can vary between hot, cold and rainy.\n\nGeneral guidance:\nAnkle to knee length dresses\nSuit pants and button down shirt. Suit jackets, vests, ties or bow-ties optional.\nClassy but comfortable shoes for dancing and outdoor celebrations.\nShawl, additional layer and/or umbrella recommended in case of rain or cool weather.\n\nPlease avoid wearing white, cream or overly bright/vivid colors due to the historical setting of the ceremony.\n\nDress code examples:"
+      },
+      "registry": {
+        "header": "Registry",
+        "details": "<TODO>"
+      },
+      "getting-there": {
+        "header": "Getting There",
+        "details": "<TODO>"
+      },
+      "children": {
+        "header": "Children and Plus One's",
+        "details": "<TODO>"
+      }
+    }
+  },
+  "other-events": {
+    "title-section": {
+      "other-events": "Inne Wydarzenia"
+    },
+    "schedule-section": {
+      "title": "Tydzień w skrócie",
+      "description": "Zaplanowaliśmy kilka atrakcji przed ślubem dla przyjaciół, gości zagranicznych i osób, które przyjadą do hotelu wcześniej. W zaproszeniu ślubnym znajdą się informacje o wydarzeniach, w których weźmiesz udział."
+    },
+    "bridal-party-meetup": {
+      "title": "Spotkanie druhen"
+    },
+    "a-day-in-krakow": {
+      "title": "Dzień w Krakowie"
+    },
+    "bachelor-ette": {
+      "title": "Kawaler/ka"
+    },
+    "welcome-drinks": {
+      "title": "Napoje powitalne",
+      "details": "Dla osób, które przybędą na miejsce w piątek 11 września lub wcześniej, zorganizujemy nieformalne spotkanie wieczorem przed ślubem w Browarze Krajcar w Żywcu. Transport będzie zapewniony przez Beskidian, a dokładny czas zostanie podany bliżej daty. Jedzenie i napoje można zakupić osobno. Wszyscy goście weselni są mile widziani."
+    }
+  },
+  "international": {
+    "title-section": {
+      "title": "Goście międzynarodowi"
+    },
+    "week-at-a-glance-section": {
+      "title": "Week at a Glance"
+    },
+    "a-day-in-krakow-section": {
+      "title": "A Day in Krakow"
     }
   }
 }

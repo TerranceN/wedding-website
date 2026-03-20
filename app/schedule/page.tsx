@@ -94,116 +94,25 @@ function TitleSection({ id }: { id?: string }) {
   );
 }
 
-function ScheduleSection({ id }: { id?: string }) {
-  const { t } = useTranslation();
-
-  return (
-    <Section
-      id={id}
-      sx={{
-        background: "#eeebe7",
-      }}
-    >
-      <Stack sx={{ margin: "2vh 10vw" }}>
-        <Typography
-          fontFamily="Messaline"
-          fontSize={{
-            md: 80,
-            sm: 70,
-            xs: 50,
-          }}
-          whiteSpace="pre-line"
-          color="#2D2B25"
-        >
-          {t("schedule.schedule-section.title")}
-        </Typography>
-        <Stack
-          sx={{
-            background: "white",
-            padding: "4vw",
-            borderRadius: "2px",
-          }}
-        >
-          <ResponsiveSchedule
-            spacing="30px"
-            dayPadding={{
-              sm: "10px 0",
-              xs: 0,
-            }}
-            events={[
-              {
-                day: {
-                  name: "Saturday",
-                  date: "Sept 12th, 2026",
-                },
-                events: [
-                  {
-                    name: "Ceremony",
-                    location: "Zywiec Stary Zamek",
-                    time: "17:00",
-                  },
-                  {
-                    name: "Reception Cocktail Hour",
-                    location: "Beskidian Outdoor Gazebo",
-                    time: "18:00",
-                  },
-                  {
-                    name: "Reception",
-                    location: "Beskidian Main Hall",
-                    time: "19:00",
-                  },
-                  {
-                    name: "Night End",
-                    time: "05:00",
-                    notes: "Feel free to retire earlier",
-                  },
-                ],
-              },
-              {
-                day: {
-                  name: "Sunday",
-                  date: "Sept 13th, 2026",
-                },
-                events: [
-                  {
-                    name: "Brunch",
-                    location: "Beskidian Outdoor Gazebo",
-                    time: "12:00",
-                  },
-                  {
-                    name: "Goodbyes",
-                    time: "16:00",
-                    notes: "Feel free to leave earlier",
-                  },
-                ],
-              },
-            ]}
-          />
-        </Stack>
-      </Stack>
-    </Section>
-  );
-}
-
 function CeremonySection({ id }: { id?: string }) {
   const { t } = useTranslation();
 
   const information = [
     {
-      header: "Address",
+      header: t("schedule.ceremony-section.address.header"),
       info: "Zamkowa 2, 34-300 Żywiec, Poland",
     },
     {
-      header: "Time",
+      header: t("schedule.ceremony-section.time.header"),
       info: "17:00 - 17:45",
     },
     {
-      header: "Getting there",
-      info: "Shuttles will be available from Beskidian and parking is also available on-site. Details to come.",
+      header: t("schedule.ceremony-section.getting-there.header"),
+      info: t("schedule.ceremony-section.getting-there.info"),
     },
     {
-      header: "Notes",
-      info: "We will be having a symbolic wedding ceremony in the castle courtyard. Please dress to be outdoors.",
+      header: t("schedule.ceremony-section.notes.header"),
+      info: t("schedule.ceremony-section.notes.info"),
     },
   ];
 
@@ -290,51 +199,59 @@ function ReceptionSection({ id }: { id?: string }) {
 
   const information = [
     {
-      header: "Address",
+      header: t("schedule.reception-section.address.header"),
       info: "Zamkowa 2, 34-300 Żywiec, Poland",
     },
     {
-      header: "Time",
+      header: t("schedule.reception-section.time.header"),
       bullets: [
         {
-          note: "Reception",
-          details: "Saturday Sept. 12th 18:00 ~ 05:00",
+          note: t("schedule.reception-section.time.reception.note"),
+          details: t("schedule.reception-section.time.reception.details"),
           bullets: [
             {
-              note: "Cocktail hour",
+              note: t(
+                "schedule.reception-section.time.reception.cocktail-hour.note",
+              ),
               details: "18:00",
             },
             {
-              note: "Entrance",
+              note: t(
+                "schedule.reception-section.time.reception.entrance.note",
+              ),
               details: "19:00",
             },
             {
-              note: "Main Dinner",
+              note: t(
+                "schedule.reception-section.time.reception.main-dinner.note",
+              ),
               details: "19:30",
             },
             {
-              note: "Second Dinner",
+              note: t(
+                "schedule.reception-section.time.reception.second-dinner.note",
+              ),
               details: "~22:00",
             },
             {
-              note: "Late-Night Snack",
+              note: t("schedule.reception-section.time.reception.snack.note"),
               details: "~02:00",
             },
           ],
         },
         {
-          note: "Brunch",
-          details: "Sunday Sept. 13th 12:00 - 16:00",
+          note: t("schedule.reception-section.time.brunch.note"),
+          details: t("schedule.reception-section.time.brunch.details"),
         },
       ],
     },
     {
-      header: "Getting there",
-      info: "Shuttles will be available from the ceremony. More info to come.",
+      header: t("schedule.reception-section.getting-there.header"),
+      info: t("schedule.reception-section.getting-there.info"),
     },
     {
-      header: "Notes",
-      info: "Cocktail hour and brunch will take place in the outdoor gazebo.",
+      header: t("schedule.reception-section.notes.header"),
+      info: t("schedule.reception-section.notes.info"),
     },
   ];
 
@@ -449,7 +366,7 @@ function FAQSection({ id }: { id?: string }) {
           "getting-there",
           "children",
         ].map((section) => (
-          <Box>
+          <Box key={section} id={`faq-${section}`}>
             <Typography fontWeight={600} textTransform="uppercase">
               {t(`schedule.faq.${section}.header`)}
             </Typography>
@@ -479,10 +396,6 @@ export default function Home() {
     title: {
       component: TitleSection,
       label: "Title",
-    },
-    schedule: {
-      component: ScheduleSection,
-      label: "Schedule",
     },
     ceremony: {
       component: CeremonySection,
