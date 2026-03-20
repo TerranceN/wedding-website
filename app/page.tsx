@@ -400,9 +400,7 @@ function TimelineSection({ id }: { id?: string }) {
                 </TableBody>
               </Table>
             </Grid>
-            <Grid size={{ lg: 1, xs: 0 }}>
-              <hr />
-            </Grid>
+            <Grid size={{ lg: 1, xs: 0 }} />
             <Grid size={{ lg: 4, xs: 12 }}>
               <Stack>
                 {infoItems.map((item, index) => (
