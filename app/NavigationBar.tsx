@@ -102,7 +102,13 @@ function NavigationBar() {
                     </List>
                   </Stack>
                 </ListItem>
-                <ListItem>
+                <ListItem
+                  sx={{
+                    ...(lang !== "en" && {
+                      visibility: "hidden",
+                    }),
+                  }}
+                >
                   <Link href="/international">
                     {t("international.title-section.title")}
                   </Link>
@@ -128,8 +134,7 @@ function NavigationBar() {
                 <Typography>PL</Typography>
               </Stack>
               <Typography sx={{ padding: "0 16px" }}>
-                Polish translations not available on pages for international
-                guests
+                {t("navigation.translation-warning")}
               </Typography>
             </Stack>
           </Box>

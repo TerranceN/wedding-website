@@ -34,6 +34,9 @@
       }
     }
   },
+  "navigation": {
+    "translation-warning": "Polish translations not available on pages for international guests"
+  },
   "title-section": {
     "paula-and-terrance": "Paula i Terrance",
     "date": "September 12th, 2026",
@@ -66,7 +69,27 @@
       "title": "What else?",
       "date-and-time": "Week of Sept. 7",
       "location": "Activities for foreign guests"
+    },
+    "accomodation": {
+      "title": "Accommodation",
+      "additional-info": "One night as Beskidian provided (Sept. 12)"
+    },
+    "transportation": {
+      "title": "Transportation",
+      "additional-info": "Shuttles between Zywiec and Beskidian provided"
+    },
+    "dress-code": {
+      "title": "Dress Code",
+      "additional-info": "Romantic cocktail"
+    },
+    "other-faq": {
+      "title": "Other FAQ"
     }
+  },
+  "rsvp-section": {
+    "click-here": "Click Here",
+    "respond-by": "Please respond by May 31ˢᵗ 2026",
+    "questions": "Questions?"
   },
   "schedule": {
     "title-section": {
@@ -76,14 +99,15 @@
       "title": "Ceremony",
       "location": "Żywiec Stary Zamek, Żywiec",
       "address": {
-        "header": "Address"
+        "header": "Address",
+        "info": "Zamkowa 2, 34-300 Żywiec, Poland"
       },
       "time": {
         "header": "Time"
       },
       "getting-there": {
         "header": "Getting There",
-        "info": "Shuttles will be available from Beskidian and parking is also available on-site. Details to come."
+        "info": "Free shuttles will be available between Żywiec Stary Zamek and Beskidian, the hotel and reception venue. Limitted on-site parking is available at a cost of 8 pln per hour."
       },
       "notes": {
         "header": "Notes",
@@ -91,16 +115,17 @@
       }
     },
     "reception-section": {
-      "title": "Reception & Brunch",
+      "title": "Reception & After Party",
       "location": "Beskidian, Węgierska Górka",
       "address": {
-        "header": "Address"
+        "header": "Address",
+        "info": "Zamkowa 2, 34-300 Żywiec, Poland"
       },
       "time": {
         "header": "Time",
         "reception": {
           "note": "Reception",
-          "details": "Saturday Sept. 12th 18:00 ~ 05:00",
+          "details": "Saturday Sept. 12th 18:00",
           "cocktail-hour": {
             "note": "Cocktail hour"
           },
@@ -115,47 +140,87 @@
           },
           "snack": {
             "note": "Late-Night Snack"
+          },
+          "night-end": {
+            "note": "Late-Night Snack"
           }
         },
         "brunch": {
-          "note": "Brunch",
-          "details": "Sunday Sept. 13th 12:00 - 16:00"
+          "note": "After Party",
+          "details": "Sunday Sept. 13th 13:00 - 17:00"
         }
       },
       "getting-there": {
         "header": "Getting There",
-        "info": "Shuttles will be available from the ceremony. More info to come."
+        "info": "Free parking is available on-site at Beskidian. Beskidian is also a ten minute walk from the Węgierska Górka train station with service to cities such as Kraków or Katowice. The quickest train routes from Kraków are under three hours and transfer through Czechowice-Dziedzice."
+      },
+      "accommodations": {
+        "header": "Accomodations",
+        "info": "Accommodations will be provided on-site at Beskidian Hotel for the night of the wedding (Saturday 12th). Hotel check-out for Sunday morning has been extended to 13:00 to align with the start of the after party. Please see FAQ for more information about accommodations. "
+      },
+      "after-party": {
+        "header": "The After Party",
+        "info": "In Poland, it is traditional to hold a second less formal event the day after the wedding known as “Poprawiny”, roughly translating to “the do-over”. This event is typically held in the evening, but we will be holding it earlier to give guests more time for travel afterwards. This event is optional."
       },
       "notes": {
         "header": "Notes",
-        "info": "Cocktail hour and brunch will take place in the outdoor gazebo."
+        "info": "Cocktail hour and the after party will take place in the outdoor gazebo. Please dress accordingly."
       }
     },
     "faq": {
       "title": "Frequent Questions",
       "transportation": {
         "header": "Transportation",
-        "details": "<TODO>"
+        "bullets": {
+          "car": {
+            "note": "By Car",
+            "details": "Węgierska Górka is about a two hour drive from Kraków. Free parking is available at Beskidian, the hotel and reception venue, but parking at the ceremony venue is paid (8 pln/hr)."
+          },
+          "transit": {
+            "note": "By Train",
+            "details": "Węgierska Górka is a less than 3 hour train ride from Kraków, transferring through Czechowice-Dziedzice. Beskidian, the hotel and reception venue, is a 10 minute walk from the train station."
+          },
+          "to-ceremony": {
+            "note": "Getting to the ceremony",
+            "details": "Free shuttles between the ceremony and reception venues will be provided."
+          }
+        }
       },
       "accommodations": {
         "header": "Accommodations",
-        "details": "Accommodations at Beskidian Hotel for the night of the wedding (Saturday 12th) are included. Details and room assignments will be provided after RSVP. If you are attending the bachelor/ette, an additional night at Beskidian will be included in the cost and RSVP. Otherwise, if you would like to arrive early or extend your stay at Beskidian, please reach out directly to the hotel: <TODO>"
+        "details1": "Accommodations will be provided gratis at Beskidian Hotel for the night of the wedding (Saturday 12th). Details and room assignments will be distributed after RSVP and may include some shared rooms depending on the final guest count.\n\nIf you plan to arrive before Saturday or to extend your stay more than one night at Beskidian, please reach out directly to the hotel after RSVPing and receiving confirmation of your accomodations: ",
+        "bullets": {
+          "email": "marketing@beskidian.pl",
+          "phone": "+48 798 824 822"
+        },
+        "details2": "If you are attending the Bachelor/ette, the option to extend your stay at Beskidian will be included in the RSVP and estimated cost for that event and no direct outreach to Beskidian is required. Please see the Bachelor/ette page for more information."
+      },
+      "plus-ones": {
+        "header": "Plus Ones",
+        "details": "All guests who do not already have a partner listed on their invitation are welcome to bring a plus one. If you are planning to bring a plus one, please include them on your RSVP."
+      },
+      "children": {
+        "header": "Children",
+        "details": "While the wedding is catered towards adults, your children are welcome to join you if you would like. If your children will be attending the wedding, please indicate this on your RSVP."
       },
       "dress-code": {
         "header": "Dress Code",
-        "details": "Cocktail attire. Be prepared for dancing and for outdoor weather. The ceremony will be held in a castle courtyard with uneven cobblestone and cocktail hour will be held on a lawn. Weather in Poland in September is typically pleasant but can vary between hot, cold and rainy.\n\nGeneral guidance:\nAnkle to knee length dresses\nSuit pants and button down shirt. Suit jackets, vests, ties or bow-ties optional.\nClassy but comfortable shoes for dancing and outdoor celebrations.\nShawl, additional layer and/or umbrella recommended in case of rain or cool weather.\n\nPlease avoid wearing white, cream or overly bright/vivid colors due to the historical setting of the ceremony.\n\nDress code examples:"
+        "details1": "The dress code is romantic cocktail attire. Please be prepared for dancing and for outdoor weather. The ceremony will be held in a castle courtyard with uneven cobblestone and cocktail hour will be held on a lawn. Weather in Poland in September is typically pleasant but can vary between hot, cold and rainy.\n\nGeneral guidance:",
+        "bullets": {
+          "bullet1": "Above-the-knee to ankle-length dresses",
+          "bullet2": "Suit pants and button down shirt. Suit jackets, vests, ties or bow-ties optional.",
+          "bullet3": "Classy but comfortable shoes for dancing and outdoor celebrations.",
+          "bullet4": "Shawl, additional layer and/or umbrella recommended in case of rain or cool weather."
+        },
+        "details2": "\nPlease avoid wearing white, cream or overly bright colors due to the historical setting of the ceremony."
       },
       "registry": {
         "header": "Registry",
-        "details": "<TODO>"
+        "details": "Your presence is more than enough, we are honored that you will be joining us in Poland!\nIf you would like to provide a gift, we kindly ask that you refrain from physical objects as we will be traveling from abroad and our ability to bring gifts back with us is limited. If you would like to provide a cash donation, a card box will be available at the wedding or you can directly transfer paula.and.terrance@gmail.com including your name so that we can thank you for your gift. We appreciate your understanding!"
       },
-      "getting-there": {
-        "header": "Getting There",
-        "details": "<TODO>"
-      },
-      "children": {
-        "header": "Children and Plus One's",
-        "details": "<TODO>"
+      "more-questions": {
+        "header": "More Questions?",
+        "details": "Please see our International FAQ section for questions related to international travel or reach out to paula.and.terrance@gmail.com if you have additional questions."
       }
     }
   },
@@ -165,13 +230,37 @@
     },
     "schedule-section": {
       "title": "Week at a Glance",
-      "description": "We’ve planned a few activities leading up to the wedding for friends, foreign guests, and those arriving at the hotel early. Your wedding invitation will list the events you are included on."
+      "description": "We’ve planned a few activities leading up to the wedding for friends, foreign guests, and those arriving at the hotel early. Your wedding invitation will list the events you are included on.",
+      "bridal-party-meetup": {
+        "title": "Bridal Party Meet-up",
+        "description": "Activities for bridal party"
+      },
+      "a-day-in-krakow": {
+        "title": "A Day in Kraków",
+        "description": "Activities for overseas guests"
+      },
+      "bachelor-ette": {
+        "title": "Bachelor/ette",
+        "description": "Celebration in the mountains with close friends"
+      },
+      "welcome-drinks": {
+        "title": "Rehearsal Drinks",
+        "description": "Event for family and bridal party members"
+      },
+      "wedding": {
+        "title": "Wesele",
+        "description": "Ceremony and reception for all guests"
+      },
+      "after-party": {
+        "title": "Poprawiny",
+        "description": "Final celebration and goobye’s for all guests"
+      }
     },
     "bridal-party-meetup": {
       "title": "Bridal Party Meet-Up"
     },
     "a-day-in-krakow": {
-      "title": "A Day in Krakow"
+      "title": "A Day in Kraków"
     },
     "bachelor-ette": {
       "title": "Bachelor/ette"
@@ -183,13 +272,7 @@
   },
   "international": {
     "title-section": {
-      "title": "International Guests"
-    },
-    "week-at-a-glance-section": {
-      "title": "Week at a Glance"
-    },
-    "a-day-in-krakow-section": {
-      "title": "A Day in Krakow"
+      "title": "International\nFAQ"
     }
   }
 }

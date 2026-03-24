@@ -34,23 +34,24 @@
       }
     }
   },
+  "navigation": {
+    "translation-warning": "Sekcja dla gości zagranicznych nie jest dostępna w języku polskim"
+  },
   "title-section": {
-    "paula-and-terrance": "Paula & Terrance",
+    "paula-and-terrance": "Paula i Terrance",
     "date": "12 września 2026",
     "location": "Polska"
   },
   "intro-section": {
-    "title": "Welcome!",
-    "title-translation": "(Witamy!)",
-    "intro": "Bierzemy ślub w Polsce, aby uczcić nasze wspólne dziedzictwo i wspólną przyszłość.\n\nMamy nadzieję, że do nas dołączysz!"
+    "title": "Witamy!",
+    "intro": "Pobieramy się w Polsce, aby uczcić nasze wspólne korzenie oraz naszą przyszłość razem.\n\nMamy nadzieję, że będziecie mogli do nas dołączyć w tym wyjątkowym dniu!"
   },
   "timeline-section": {
-    "title": "You're Invited!",
-    "title-translation": "(Zapraszamy!)",
+    "title": "Zapraszamy!",
     "slub": {
       "title": "Ślub",
       "date-and-time": "12 września 2026 | 16:45",
-      "location": "Stary dziedziniec zamkowy, Żywiec"
+      "location": "Dziedziniec Starego Zamku, Żywiec"
     },
     "wesele": {
       "title": "Wesele",
@@ -66,96 +67,131 @@
       "title": "Co jeszcze?",
       "date-and-time": "Tydzień 7 września",
       "location": "Zajęcia dla gości zagranicznych"
+    },
+    "accomodation": {
+      "title": "Nocleg",
+      "additional-info": "Naszym Gościom zapewniamy nocleg w Beskidianie tuż po przyjęciu weselnym."
+    },
+    "transportation": {
+      "title": "Transport",
+      "additional-info": "Dla chętnych zorganizujemy transport między miejscem ceremonii, a obiektem weselnym."
+    },
+    "other-faq": {
+      "title": "Inne FAQ"
     }
+  },
+  "rsvp-section": {
+    "click-here": "Kliknij tutaj",
+    "respond-by": "Prosimy o potwierdzenie przybycia do 31 maja 2026",
+    "questions": "Pytania?"
   },
   "schedule": {
     "title-section": {
-      "wedding-details": "Szczegóły ślubu"
+      "wedding-details": "Detale ślubu"
     },
     "ceremony-section": {
-      "title": "Ślub",
+      "title": "Ceremonia",
       "location": "Żywiec Stary Zamek, Żywiec",
       "address": {
-        "header": "Adres"
+        "header": "Adres",
+        "info": "ul. Zamkowa 2, 34-300 Żywiec"
       },
       "time": {
-        "header": "Czas"
+        "header": "Godzina"
       },
       "getting-there": {
-        "header": "Dotarcie tam",
-        "info": "Autobusy będą dostępne z Beskidian, a parking jest również dostępny na miejscu. Szczegóły wkrótce."
+        "header": "Dojazd",
+        "info": "Pomiędzy Zamkiem w Żywcu a Beskidianem będą kursować bezpłatne busy dla gości. W pobliżu Zamku jest ograniczona ilość parkingów samochodowych."
       },
       "notes": {
-        "header": "Notatki",
-        "info": "Symboliczna ceremonia zaślubin odbędzie się na dziedzińcu zamkowym. Prosimy o ubranie się na zewnątrz."
+        "header": "Uwagi",
+        "info": "Ceremonia będzie miała charakter symboliczny i odbędzie się na dziedzińcu zamku. Prosimy o strój odpowiedni na wydarzenie na świeżym powietrzu."
       }
     },
     "reception-section": {
-      "title": "Wesele & Poprawiny",
+      "title": "Wesele i Poprawiny",
       "location": "Beskidian, Węgierska Górka",
       "address": {
-        "header": "Adres"
+        "header": "Adres",
+        "info": "ul. 3-go Maja 12, 34-350 Węgierska Górka"
       },
       "time": {
-        "header": "Czas",
+        "header": "Program Uroczystości",
         "reception": {
           "note": "Wesele",
-          "details": "Sobota 12 września 18:00 ~ 05:00",
+          "details": "Sobota 12 września 18:00 - 05:00",
           "cocktail-hour": {
-            "note": "Godzina koktajlowa"
+            "note": "Koktajl powitalny"
           },
           "entrance": {
-            "note": "Wejście"
+            "note": "Wejście na salę"
           },
           "main-dinner": {
-            "note": "Główna Kolacja"
+            "note": "Obiad weselny"
           },
           "second-dinner": {
-            "note": "Druga Kolacja"
+            "note": "Druga kolacja"
           },
           "snack": {
-            "note": "Przekąska na Późną Noc"
+            "note": "Przekąski nocne"
           }
         },
         "brunch": {
           "note": "Poprawiny",
-          "details": "Niedziela 13 września 12:00 - 16:00"
+          "details": "niedziela, 13 września 13:00 - 17:00"
         }
       },
       "getting-there": {
         "header": "Dotarcie tam",
-        "info": "Z ceremonii będzie można skorzystać z transportu wahadłowego. Więcej informacji wkrótce."
+        "info": "Hotel Beskidian oferuje bezpłatny parking. Beskidian znajduje się około 10 minut na piechotę od stacji kolejowej Węgierska Górka, która oferuje połączenia z miastami takimi jak Kraków i Katowice."
+      },
+      "accommodations": {
+        "header": "Noclegi",
+        "info": "Godzina wymeldowania z hotelu w niedzielę została przedłużona do 13:00, aby lepiej dopasować ją do rozpoczęcia poprawin. Więcej informacji o noclegach znajduje się w sekcji FAQ."
       },
       "notes": {
-        "header": "Notatki",
-        "info": "Przyjęcie koktajlowe i brunch odbędą się w altanie na świeżym powietrzu."
+        "header": "Uwagi",
+        "info": "Koktajl powitalny oraz poprawiny odbędą się w altanie na świeżym powietrzu, dlatego prosimy o odpowiedni strój."
       }
     },
     "faq": {
-      "title": "Często zadawane pytania",
+      "title": "FAQ",
       "transportation": {
-        "header": "Transport",
-        "details": "<TODO>"
+        "header": "Dojazd",
+        "bullets": {
+          "car": {
+            "note": "Samochodem",
+            "details": "Dwie godziny z Krakówa do Węgierskiej Górki. Bezpłatny parking dostępny jest przy Beskidianie (hotel i miejsce przyjęcia weselnego), natomiast parking przy miejscu ceremonii w Żywcu jest płatny (8 zł/godz.)."
+          },
+          "transit": {
+            "note": "Transportem publicznym",
+            "details": "Do Węgierskiej Górki można dojechać pociągiem z Krakówa w mniej niż 3 godziny, z przesiadką w Czechowicach-Dziedzicach. Beskidian znajduje się około 10 minut na piechotę od stacji kolejowej w Węgierskiej Górce."
+          },
+          "to-ceremony": {
+            "note": "Dojazd na ceremonię",
+            "details": "Zapewniamy bezpłatny transport między miejscem ceremonii a miejscem przyjęcia."
+          }
+        }
       },
       "accommodations": {
-        "header": "Accommodations",
-        "details": "Accommodations at Beskidian Hotel for the night of the wedding (Saturday 12th) are included. Details and room assignments will be provided after RSVP. If you are attending the bachelor/ette, an additional night at Beskidian will be included in the cost and RSVP. Otherwise, if you would like to arrive early or extend your stay at Beskidian, please reach out directly to the hotel: <TODO>"
+        "header": "Noclegi",
+        "details": "Nocleg w Hotelu Beskidian w noc weselną (sobota, 12 września) jest zapewniony dla naszych gości. Informacje o pokojach przekażemy po zamknięciu listy gości. Prosimy o wyrozumiałość – część pokoi to pokoje czteroosobowe, które planujemy dzielić między zaprzyjaźnione pary.\nBeskidy mają wiele do zaoferowania, więc zachęcamy do przedłużenia pobytu. Rezerwacji dodatkowych nocy można dokonać bezpośrednio w recepcji hotelu Beskidian: marketing@beskidian.pl lub pod numerem 798 824 822.\nJeśli bierzecie udział w wieczorze kawalerskim/panieńskim, dodatkowa noc w Beskidianie będzie uwzględniona w kosztach oraz w RSVP tego wydarzenia."
+      },
+      "plus-ones": {
+        "header": "Osoby Towarzyszące",
+        "details": "Serdecznie zapraszamy do udziału w weselu wraz z osobami towarzyszącymi. Jeśli na Waszym zaproszeniu nie widnieje jeszcze imię i nazwisko osoby towarzyszącej, prosimy o uzupełnienie tych informacji podczas wypełniania RSVP."
+      },
+      "children": {
+        "header": "Dzieci",
+        "details": "Jeśli planujecie udział w weselu razem ze swoimi dziećmi, prosimy o uwzględnienie ich w potwierdzeniu obecności. Pozwoli nam to zadbać o komfort wszystkich gości, zarówno tych małych, jak i dużych."
       },
       "dress-code": {
         "header": "Dress Code",
-        "details": "Cocktail attire. Be prepared for dancing and for outdoor weather. The ceremony will be held in a castle courtyard with uneven cobblestone and cocktail hour will be held on a lawn. Weather in Poland in September is typically pleasant but can vary between hot, cold and rainy.\n\nGeneral guidance:\nAnkle to knee length dresses\nSuit pants and button down shirt. Suit jackets, vests, ties or bow-ties optional.\nClassy but comfortable shoes for dancing and outdoor celebrations.\nShawl, additional layer and/or umbrella recommended in case of rain or cool weather.\n\nPlease avoid wearing white, cream or overly bright/vivid colors due to the historical setting of the ceremony.\n\nDress code examples:"
+        "details": "Styl koktajlowy z nutą romantyzmu.  Prosimy przygotować się zarówno na tańce, jak i na wydarzenia na świeżym powietrzu. Ceremonia odbędzie się na dziedzińcu zamku z nierówną brukowaną nawierzchnią, a koktajl powitalny na trawniku.\n\nProsimy unikać koloru białego, kremowego oraz bardzo jaskrawych kolorów, ze względu na historyczny charakter miejsca ceremonii."
       },
       "registry": {
-        "header": "Registry",
-        "details": "<TODO>"
-      },
-      "getting-there": {
-        "header": "Getting There",
-        "details": "<TODO>"
-      },
-      "children": {
-        "header": "Children and Plus One's",
-        "details": "<TODO>"
+        "header": "Upominki",
+        "details": "Najpiękniejszym prezentem będzie dla nas Wasza obecność. Jeśli jednak planujecie upominek, prosimy o formę pieniężną zamiast prezentów rzeczowych – ze względu na nasz powrotny lot do domu, nie będziemy w stanie ich ze sobą zabrać.\nDarowizny można przekazać do pudełka na kartki w trakcie wesela lub drogą elektroniczną na adres: paula.and.terrance@gmail.com. Dziękujemy za wyrozumiałość!"
       }
     }
   },
@@ -165,31 +201,49 @@
     },
     "schedule-section": {
       "title": "Tydzień w skrócie",
-      "description": "Zaplanowaliśmy kilka atrakcji przed ślubem dla przyjaciół, gości zagranicznych i osób, które przyjadą do hotelu wcześniej. W zaproszeniu ślubnym znajdą się informacje o wydarzeniach, w których weźmiesz udział."
+      "description": "Zaplanowaliśmy kilka spotkań przed weselem dla rodziny, przyjaciół i gości przybywających z daleka. Szczegółową listę wydarzeń na które jesteście zaproszeni, znajdziecie w zaproszeniu.",
+      "bridal-party-meetup": {
+        "title": "Bridal Party",
+        "description": "Spotkanie dla druchen i druchów"
+      },
+      "a-day-in-krakow": {
+        "title": "Dzień w Krakówie",
+        "description": "Atrakcje i zwiedzanie dla gości zagranicznych"
+      },
+      "bachelor-ette": {
+        "title": "Wieczór Panienski/Kawalerski",
+        "description": "Impreza w górach"
+      },
+      "welcome-drinks": {
+        "title": "Wieczór Powitalny",
+        "description": "Spotkanie dla rodziny oraz osób z orszaku ślubnego"
+      },
+      "wedding": {
+        "title": "Wesele",
+        "description": "Ceremonia i przyjęcie weselne"
+      },
+      "after-party": {
+        "title": "Poprawiny",
+        "description": "Obiad i pożegnanie gości"
+      }
     },
     "bridal-party-meetup": {
-      "title": "Spotkanie druhen"
+      "title": "Bridal Party"
     },
     "a-day-in-krakow": {
-      "title": "Dzień w Krakowie"
+      "title": "Dzień w Krakówie"
     },
     "bachelor-ette": {
-      "title": "Kawaler/ka"
+      "title": "Wieczór Panienski/Kawalerski"
     },
     "welcome-drinks": {
-      "title": "Napoje powitalne",
-      "details": "Dla osób, które przybędą na miejsce w piątek 11 września lub wcześniej, zorganizujemy nieformalne spotkanie wieczorem przed ślubem w Browarze Krajcar w Żywcu. Transport będzie zapewniony przez Beskidian, a dokładny czas zostanie podany bliżej daty. Jedzenie i napoje można zakupić osobno. Wszyscy goście weselni są mile widziani."
+      "title": "Wieczór Powitalny",
+      "details": "Organizujemy nieformalne spotkanie w przeddzień wesela dla rodziny oraz osób z orszaku ślubnego w Browarze Krajcar w Żywcu. Zapewniamy transport z hotelu Beskidian – dokładne godziny odjazdu podamy bliżej terminu wydarzenia. Posiłki oraz napoje można zakupić na miejscu we własnym zakresie. Serdecznie zapraszamy wszystkich gości weselnych!"
     }
   },
   "international": {
     "title-section": {
-      "title": "Goście międzynarodowi"
-    },
-    "week-at-a-glance-section": {
-      "title": "Week at a Glance"
-    },
-    "a-day-in-krakow-section": {
-      "title": "A Day in Krakow"
+      "title": "Goście\nFAQ"
     }
   }
 }

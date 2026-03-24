@@ -147,9 +147,13 @@ function WeekAtAGlanceSection({ id }: { id?: string }) {
                 },
                 events: [
                   {
-                    name: "Bridal Party Meet-up",
-                    location: "Krakow",
-                    notes: "Activities for bridal party",
+                    name: t(
+                      "other-events.schedule-section.bridal-party-meetup.title",
+                    ),
+                    location: "Kraków",
+                    notes: t(
+                      "other-events.schedule-section.bridal-party-meetup.description",
+                    ),
                     link: "/other-events/bridal-party-meetup",
                   },
                 ],
@@ -160,9 +164,13 @@ function WeekAtAGlanceSection({ id }: { id?: string }) {
                 },
                 events: [
                   {
-                    name: "A Day in Krakow",
-                    location: "Krakow",
-                    notes: "Activities for overseas guests",
+                    name: t(
+                      "other-events.schedule-section.a-day-in-krakow.title",
+                    ),
+                    location: "Kraków",
+                    notes: t(
+                      "other-events.schedule-section.a-day-in-krakow.description",
+                    ),
                     link: "/other-events/a-day-in-krakow",
                   },
                 ],
@@ -173,9 +181,13 @@ function WeekAtAGlanceSection({ id }: { id?: string }) {
                 },
                 events: [
                   {
-                    name: "Bachelor/ette",
-                    location: "Wegierska Gorka",
-                    notes: "Celebration in the mountains with close friends",
+                    name: t(
+                      "other-events.schedule-section.bachelor-ette.title",
+                    ),
+                    location: "Węgierska Górka",
+                    notes: t(
+                      "other-events.schedule-section.bachelor-ette.description",
+                    ),
                     link: "/other-events/bachelor-ette",
                   },
                 ],
@@ -186,10 +198,13 @@ function WeekAtAGlanceSection({ id }: { id?: string }) {
                 },
                 events: [
                   {
-                    name: "Welcome Drinks",
-                    location: "Krakow",
-                    notes:
-                      "Informal meet-up ahead of wedding for those arriving early",
+                    name: t(
+                      "other-events.schedule-section.welcome-drinks.title",
+                    ),
+                    location: "Kraków",
+                    notes: t(
+                      "other-events.schedule-section.welcome-drinks.description",
+                    ),
                     link: "/other-events/welcome-drinks",
                   },
                 ],
@@ -200,9 +215,11 @@ function WeekAtAGlanceSection({ id }: { id?: string }) {
                 },
                 events: [
                   {
-                    name: "Wedding",
-                    location: "Wegierska Gorka",
-                    notes: "Ceremony and reception for all guests",
+                    name: t("other-events.schedule-section.wedding.title"),
+                    location: "Węgierska Górka",
+                    notes: t(
+                      "other-events.schedule-section.wedding.description",
+                    ),
                     link: "/schedule#ceremony",
                   },
                 ],
@@ -213,9 +230,11 @@ function WeekAtAGlanceSection({ id }: { id?: string }) {
                 },
                 events: [
                   {
-                    name: "Brunch",
-                    location: "Wegierska Gorka",
-                    notes: "Final celebration and goobye’s for all guests",
+                    name: t("other-events.schedule-section.after-party.title"),
+                    location: "Węgierska Górka",
+                    notes: t(
+                      "other-events.schedule-section.after-party.description",
+                    ),
                     link: "/schedule#reception",
                   },
                 ],

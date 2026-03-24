@@ -10,7 +10,7 @@ import {
   type BoxProps,
 } from "@mui/material";
 import { type ReactElement } from "react";
-import { useTranslation } from "next-export-i18n";
+import { useSelectedLanguage, useTranslation } from "next-export-i18n";
 import ResponsiveSchedule from "@/app/components/ResponsiveSchedule";
 import BulletedList from "@/app/components/BulletedList";
 
@@ -100,11 +100,11 @@ function CeremonySection({ id }: { id?: string }) {
   const information = [
     {
       header: t("schedule.ceremony-section.address.header"),
-      info: "Zamkowa 2, 34-300 Żywiec, Poland",
+      info: t("schedule.ceremony-section.address.header"),
     },
     {
       header: t("schedule.ceremony-section.time.header"),
-      info: "17:00 - 17:45",
+      info: "16:45",
     },
     {
       header: t("schedule.ceremony-section.getting-there.header"),
@@ -195,12 +195,13 @@ function CeremonySection({ id }: { id?: string }) {
 }
 
 function ReceptionSection({ id }: { id?: string }) {
+  const { lang } = useSelectedLanguage();
   const { t } = useTranslation();
 
   const information = [
     {
       header: t("schedule.reception-section.address.header"),
-      info: "Zamkowa 2, 34-300 Żywiec, Poland",
+      info: t("schedule.reception-section.address.info"),
     },
     {
       header: t("schedule.reception-section.time.header"),
@@ -219,13 +220,13 @@ function ReceptionSection({ id }: { id?: string }) {
               note: t(
                 "schedule.reception-section.time.reception.entrance.note",
               ),
-              details: "19:00",
+              details: "~19:00",
             },
             {
               note: t(
                 "schedule.reception-section.time.reception.main-dinner.note",
               ),
-              details: "19:30",
+              details: "~19:00",
             },
             {
               note: t(
@@ -233,10 +234,16 @@ function ReceptionSection({ id }: { id?: string }) {
               ),
               details: "~22:00",
             },
-            {
-              note: t("schedule.reception-section.time.reception.snack.note"),
-              details: "~02:00",
-            },
+            ...(lang === "en"
+              ? [
+                  {
+                    note: t(
+                      "schedule.reception-section.time.reception.night-end.note",
+                    ),
+                    details: "~05:00, but you are welcome to retire earlier",
+                  },
+                ]
+              : []),
           ],
         },
         {
@@ -249,6 +256,18 @@ function ReceptionSection({ id }: { id?: string }) {
       header: t("schedule.reception-section.getting-there.header"),
       info: t("schedule.reception-section.getting-there.info"),
     },
+    {
+      header: t("schedule.reception-section.accommodations.header"),
+      info: t("schedule.reception-section.accommodations.info"),
+    },
+    ...(lang === "en"
+      ? [
+          {
+            header: t("schedule.reception-section.after-party.header"),
+            info: t("schedule.reception-section.after-party.info"),
+          },
+        ]
+      : []),
     {
       header: t("schedule.reception-section.notes.header"),
       info: t("schedule.reception-section.notes.info"),
@@ -334,7 +353,87 @@ function ReceptionSection({ id }: { id?: string }) {
   );
 }
 
+function FAQTransportationDetails() {
+  const { t } = useTranslation();
+
+  return (
+    <BulletedList
+      bullets={[
+        {
+          note: t("schedule.faq.transportation.bullets.car.note"),
+          details: t("schedule.faq.transportation.bullets.car.details"),
+        },
+        {
+          note: t("schedule.faq.transportation.bullets.transit.note"),
+          details: t("schedule.faq.transportation.bullets.transit.details"),
+        },
+        {
+          note: t("schedule.faq.transportation.bullets.to-ceremony.note"),
+          details: t("schedule.faq.transportation.bullets.to-ceremony.details"),
+        },
+      ]}
+    />
+  );
+}
+
+function FAQAccommodationDetails() {
+  const { t } = useTranslation();
+
+  return (
+    <>
+      <Typography whiteSpace="pre-line">
+        {t(`schedule.faq.accommodations.details1`)}
+      </Typography>
+      <BulletedList
+        bullets={[
+          {
+            details: t("schedule.faq.accommodations.bullets.email"),
+          },
+          {
+            details: t("schedule.faq.accommodations.bullets.phone"),
+          },
+        ]}
+      />
+      <Typography whiteSpace="pre-line">
+        {t(`schedule.faq.accommodations.details2`)}
+      </Typography>
+    </>
+  );
+}
+
+function FAQDressCodeDetails() {
+  const { t } = useTranslation();
+
+  return (
+    <>
+      <Typography whiteSpace="pre-line">
+        {t(`schedule.faq.dress-code.details1`)}
+      </Typography>
+      <BulletedList
+        bullets={[
+          {
+            details: t("schedule.faq.dress-code.bullets.bullet1"),
+          },
+          {
+            details: t("schedule.faq.dress-code.bullets.bullet2"),
+          },
+          {
+            details: t("schedule.faq.dress-code.bullets.bullet3"),
+          },
+          {
+            details: t("schedule.faq.dress-code.bullets.bullet4"),
+          },
+        ]}
+      />
+      <Typography whiteSpace="pre-line">
+        {t(`schedule.faq.dress-code.details2`)}
+      </Typography>
+    </>
+  );
+}
+
 function FAQSection({ id }: { id?: string }) {
+  const { lang } = useSelectedLanguage();
   const { t } = useTranslation();
 
   return (
@@ -358,29 +457,32 @@ function FAQSection({ id }: { id?: string }) {
         >
           {t("schedule.faq.title")}
         </Typography>
-        {[
-          "transportation",
-          "accommodations",
-          "dress-code",
-          "registry",
-          "getting-there",
-          "children",
-        ].map((section) => (
-          <Box key={section} id={`faq-${section}`}>
-            <Typography fontWeight={600} textTransform="uppercase">
-              {t(`schedule.faq.${section}.header`)}
-            </Typography>
-            <Typography whiteSpace="pre-line">
-              {t(`schedule.faq.${section}.details`)}
-            </Typography>
-            {section === "dress-code" && (
-              <img
-                src="/Images/DressCode.webp"
-                style={{ objectFit: "contain", padding: "20px" }}
-              />
-            )}
-          </Box>
-        ))}
+        {(
+          [
+            ["transportation", FAQTransportationDetails],
+            ["accommodations", lang === "en" ? FAQAccommodationDetails : null],
+            ["plus-ones", null],
+            ["children", null],
+            ["dress-code", lang === "en" ? FAQDressCodeDetails : null],
+            ["registry", null],
+            ...(lang === "en" ? [["more-questions", null]] : []),
+          ] as const
+        ).map(([section, Details]) => {
+          return (
+            <Box key={section} id={`faq-${section}`}>
+              <Typography fontWeight={600} textTransform="uppercase">
+                {t(`schedule.faq.${section}.header`)}
+              </Typography>
+              {Details ? (
+                <Details />
+              ) : (
+                <Typography whiteSpace="pre-line">
+                  {t(`schedule.faq.${section}.details`)}
+                </Typography>
+              )}
+            </Box>
+          );
+        })}
       </Stack>
     </Section>
   );

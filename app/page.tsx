@@ -14,7 +14,7 @@ import {
   type BoxProps,
 } from "@mui/material";
 import { type ReactElement } from "react";
-import { useTranslation } from "next-export-i18n";
+import { useSelectedLanguage, useTranslation } from "next-export-i18n";
 import Link from "next/link";
 import { Launch } from "@mui/icons-material";
 
@@ -109,6 +109,7 @@ function IntroSection({ id }: { id?: string }) {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   const { t } = useTranslation();
+  const { lang } = useSelectedLanguage();
 
   return (
     <Section
@@ -161,7 +162,7 @@ function IntroSection({ id }: { id?: string }) {
                   marginBottom: "20px",
                 }}
               >
-                {t("intro-section.title-translation")}
+                {lang === "en" ? t("intro-section.title-translation") : ""}
               </Typography>
               <Typography
                 fontSize={24}
@@ -198,6 +199,7 @@ function TimelineSection({ id }: { id?: string }) {
   const isMediumOrSmaller = useMediaQuery(theme.breakpoints.down("md"));
   const isSmallOrSmaller = useMediaQuery(theme.breakpoints.down("sm"));
   const { t } = useTranslation();
+  const { lang } = useSelectedLanguage();
 
   const eventData = [
     ["slub", "/schedule#ceremony"],
@@ -252,22 +254,26 @@ function TimelineSection({ id }: { id?: string }) {
 
   const infoItems = [
     {
-      title: "Accommodation",
-      additionalInfo: "One night as Beskidian provided (Sept. 12)",
+      title: t("timeline-section.accomodation.title"),
+      additionalInfo: t("timeline-section.accomodation.additional-info"),
       link: "/schedule#faq-accommodations",
     },
     {
-      title: "Transportation",
-      additionalInfo: "Shuttles between Zywiec and Beskidian provided",
+      title: t("timeline-section.transportation.title"),
+      additionalInfo: t("timeline-section.transportation.additional-info"),
       link: "/schedule#faq-transportation",
     },
+    ...(lang === "en"
+      ? [
+          {
+            title: t("timeline-section.dress-code.title"),
+            additionalInfo: t("timeline-section.dress-code.additional-info"),
+            link: "/schedule#faq-dress-code",
+          },
+        ]
+      : []),
     {
-      title: "Dress Code",
-      additionalInfo: "Romantic cocktail",
-      link: "/schedule#faq-dress-code",
-    },
-    {
-      title: "Other FAQ",
+      title: t("timeline-section.other-faq.title"),
       link: "/schedule#faq",
     },
   ].map((item) => ({
@@ -338,7 +344,7 @@ function TimelineSection({ id }: { id?: string }) {
             marginBottom: "20px",
           }}
         >
-          {t("timeline-section.title-translation")}
+          {lang === "en" ? t("timeline-section.title-translation") : ""}
         </Typography>
         <Stack
           spacing={4}
@@ -350,7 +356,7 @@ function TimelineSection({ id }: { id?: string }) {
           }}
         >
           <Grid container>
-            <Grid size={{ lg: 7, xs: 12 }}>
+            <Grid size={{ xl: 7, lg: 8, xs: 12 }}>
               <Table>
                 <TableBody>
                   {eventData.map((event, index) => (
@@ -392,7 +398,15 @@ function TimelineSection({ id }: { id?: string }) {
                         <>
                           <TableCell>{event.title}</TableCell>
                           <TableCell>{event.dateAndTime}</TableCell>
-                          <TableCell>{event.location}</TableCell>
+                          <TableCell
+                            sx={{
+                              "& > p": {
+                                whiteSpace: "normal !important",
+                              },
+                            }}
+                          >
+                            {event.location}
+                          </TableCell>
                         </>
                       )}
                     </TableRow>
@@ -400,9 +414,13 @@ function TimelineSection({ id }: { id?: string }) {
                 </TableBody>
               </Table>
             </Grid>
-            <Grid size={{ lg: 1, xs: 0 }} />
+            <Grid size={{ xl: 1, lg: 0, xs: 0 }} />
             <Grid size={{ lg: 4, xs: 12 }}>
-              <Stack>
+              <Stack
+                sx={{
+                  marginLeft: "20px",
+                }}
+              >
                 {infoItems.map((item, index) => (
                   <Box
                     key={index}
@@ -424,6 +442,8 @@ function TimelineSection({ id }: { id?: string }) {
 }
 
 function RSVPSection({ id }: { id?: string }) {
+  const { t } = useTranslation();
+
   return (
     <Section
       id={id}
@@ -463,7 +483,7 @@ function RSVPSection({ id }: { id?: string }) {
                 textTransform="uppercase"
                 fontSize="3vh"
               >
-                Click Here
+                {t("rsvp-section.click-here")}
               </Typography>
             </Stack>
             <Stack
@@ -475,14 +495,14 @@ function RSVPSection({ id }: { id?: string }) {
               alignItems="center"
             >
               <Typography color="#2D2B25" fontSize="4vh">
-                Please respond by May 31<sup>st</sup> 2026
+                {t("rsvp-section.respond-by")}
               </Typography>
             </Stack>
           </Box>
         </Link>
         <Stack direction="row" spacing={2}>
-          <Typography color="#FFFFFF" fontSize="4vh">
-            QUESTIONS?
+          <Typography color="#FFFFFF" fontSize="4vh" textTransform="uppercase">
+            {t("rsvp-section.questions")}
           </Typography>
           <Typography color="#FFFFFF" fontSize="4vh">
             |

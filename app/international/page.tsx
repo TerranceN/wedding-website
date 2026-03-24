@@ -62,7 +62,7 @@ function TitleSection({ id }: { id?: string }) {
             marginBottom: "-10px",
             ...(isMediumOrSmaller
               ? {
-                  marginTop: "2vh",
+                  marginTop: "60vh",
                   textAlign: "center",
                 }
               : {
@@ -71,12 +71,13 @@ function TitleSection({ id }: { id?: string }) {
                   top: "30vh",
                 }),
           }}
+          whiteSpace="pre-line"
         >
           {t("international.title-section.title")}
         </Typography>
       </Box>
       <img
-        src={"/Images/ScheduleTitle.webp"}
+        src={"/Images/DrinkingCoffee.webp"}
         style={{
           maxWidth: "unset",
           width: "100%",
@@ -92,122 +93,7 @@ function TitleSection({ id }: { id?: string }) {
   );
 }
 
-function WeekAtAGlanceSection({ id }: { id?: string }) {
-  const { t } = useTranslation();
-
-  return (
-    <Section
-      id={id}
-      sx={{
-        background: "#CCC1B7",
-      }}
-    >
-      <Stack sx={{ margin: "2vh 10vw" }}>
-        <Typography
-          fontFamily="Messaline"
-          fontSize={{
-            md: 80,
-            sm: 70,
-            xs: 50,
-          }}
-          whiteSpace="pre-line"
-          color="#2D2B25"
-        >
-          {t("international.week-at-a-glance-section.title")}
-        </Typography>
-        <Stack
-          sx={{
-            background: "white",
-            padding: "4vw",
-            borderRadius: "2px",
-          }}
-        >
-          <ResponsiveSchedule
-            spacing={{
-              sm: 0,
-              xs: "10px",
-            }}
-            dayPadding={{
-              lg: "10px 0",
-              sm: "15px 0",
-              xs: 0,
-            }}
-            events={[
-              {
-                day: {
-                  name: "Wednesday",
-                  date: "Sept 9th, 2026",
-                },
-                events: [
-                  {
-                    name: "A day in Krakow",
-                    location: "Krakow",
-                    notes: "Activities for overseas guests",
-                  },
-                ],
-              },
-              {
-                day: {
-                  name: "Thursday",
-                  date: "Sept 10th, 2026",
-                },
-                events: [
-                  {
-                    name: "Bachelor/ette",
-                    location: "Wegierska Gorka",
-                    notes: "Celebration in the mountains with close friends",
-                  },
-                ],
-              },
-              {
-                day: {
-                  name: "Friday",
-                  date: "Sept 11th, 2026",
-                },
-                events: [
-                  {
-                    name: "Welcome Drinks",
-                    location: "Zywiec",
-                    notes:
-                      "Informal meet-up ahead of wedding for those arriving early",
-                  },
-                ],
-              },
-              {
-                day: {
-                  name: "Saturday",
-                  date: "Sept 12th, 2026",
-                },
-                events: [
-                  {
-                    name: "Wedding",
-                    location: "Wegierska Gorka",
-                    notes: "Ceremony and reception for all guests",
-                  },
-                ],
-              },
-              {
-                day: {
-                  name: "Sunday",
-                  date: "Sept 13th, 2026",
-                },
-                events: [
-                  {
-                    name: "Brunch",
-                    location: "Wegierska Gorka",
-                    notes: "Final celebration and goodbyes for all guests",
-                  },
-                ],
-              },
-            ]}
-          />
-        </Stack>
-      </Stack>
-    </Section>
-  );
-}
-
-function ADayInKrakowSection({ id }: { id?: string }) {
+function ConstructionSection({ id }: { id?: string }) {
   const { t } = useTranslation();
 
   return (
@@ -228,7 +114,7 @@ function ADayInKrakowSection({ id }: { id?: string }) {
           whiteSpace="pre-line"
           color="#2D2B25"
         >
-          {t("international.a-day-in-krakow-section.title")}
+          Work in Progress
         </Typography>
         <Stack
           sx={{
@@ -236,51 +122,11 @@ function ADayInKrakowSection({ id }: { id?: string }) {
             padding: "4vw",
           }}
         >
-          <ResponsiveSchedule
-            spacing={{
-              sm: 0,
-              xs: "10px",
-            }}
-            dayPadding={{
-              sm: "15px 0",
-              xs: 0,
-            }}
-            events={[
-              {
-                day: {
-                  name: "Wednesday",
-                  date: "Sept 9th, 2026",
-                },
-                events: [
-                  {
-                    name: "Walking tour",
-                    time: "~10:00",
-                    location: "Krakow Old Town and Wawel Castle",
-                  },
-                  {
-                    name: "Lunch",
-                    time: "~12:30",
-                    location: "Authentic Milkbar in Krakow student district",
-                  },
-                  {
-                    name: "Free time",
-                    time: "~2:00",
-                    location: "Explore Krakow on your own or rest",
-                  },
-                  {
-                    name: "Dinner",
-                    time: "~6:00",
-                    location: "Group dinner in Krakow's Jewish district",
-                  },
-                  {
-                    name: "Drinks",
-                    time: "~10:00",
-                    location: "Beer garden in Krakow's Jewish district",
-                  },
-                ],
-              },
-            ]}
-          />
+          <Typography whiteSpace="pre-line" color="#2D2B25">
+            We're hard at work putting this information together for you. Please
+            check back in later this week for travel recommendations and more
+            information about Poland!
+          </Typography>
         </Stack>
       </Stack>
     </Section>
@@ -298,13 +144,9 @@ export default function Home() {
       component: TitleSection,
       label: "Title",
     },
-    "week-at-a-glance": {
-      component: WeekAtAGlanceSection,
-      label: "Week at a Glance",
-    },
-    "a-day-in-krakow": {
-      component: ADayInKrakowSection,
-      label: "A Day in Krakow",
+    construction: {
+      component: ConstructionSection,
+      label: "Construction",
     },
   };
 
