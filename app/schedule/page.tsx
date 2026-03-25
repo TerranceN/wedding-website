@@ -234,6 +234,10 @@ function ReceptionSection({ id }: { id?: string }) {
               ),
               details: "~22:00",
             },
+            {
+              note: t("schedule.reception-section.time.reception.snack.note"),
+              details: "~02:00",
+            },
             ...(lang === "en"
               ? [
                   {

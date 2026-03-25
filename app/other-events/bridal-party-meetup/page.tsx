@@ -49,7 +49,7 @@ export default function Page() {
           >
             <Typography>
               Let’s all get to know each other before the celebrations begin!
-              We’ll spend half the day together in and around Krakow and wrap up
+              We’ll spend half the day together in and around Kraków and wrap up
               any final plans ahead of the wedding.
             </Typography>
             <ResponsiveSchedule
@@ -69,7 +69,7 @@ export default function Page() {
                     {
                       time: "~ Afternoon",
                       name: "Meet & Greet",
-                      location: "Krakow",
+                      location: "Kraków",
                     },
                     {
                       time: "~ Afternoon",
@@ -79,7 +79,7 @@ export default function Page() {
                     {
                       time: "~ Evening",
                       name: "Dinner & Drinks",
-                      location: "Krakow Old Town",
+                      location: "Kraków Old Town",
                     },
                   ],
                 },
@@ -107,53 +107,28 @@ export default function Page() {
                   provided after RSVP.
                 </Typography>
                 <Typography>
-                  Dinner, accomodations, and any other meals will be paid
+                  Dinner, accommodations, and any other meals will be paid
                   individually.
                 </Typography>
               </Stack>
             </Box>
             <Box>
               <Typography fontWeight={600}>Logistics:</Typography>
-              <Stack spacing={4}>
-                <Typography>
-                  If you are traveling from abroad, please plan to arrive on
-                  Monday or earlier as you do not want to be jet-lagged in a
-                  mining tunnel. If you are arrvi Please book accomodations
-                  individually - see “A Day in Krakow” for more information and
-                  for other activities.
-                </Typography>
-              </Stack>
+              <BulletedList
+                bullets={[
+                  {
+                    note: "Accommodations and arrival",
+                    details:
+                      "If you are traveling from overseas, please plan to arrive on Monday or earlier as you do not want to be jet-lagged in a mining tunnel. If you are arriving from within Europe, please just plan to be checked in to your accommodations and settled before noon on Tuesday. Please book accommodations individually - see “A Day in Kraków” for more information and for other activities.",
+                  },
+                  {
+                    note: "Plus Ones",
+                    details:
+                      "While we would like to include partners and plus ones in the bridal party activities we may not have capacity for the group size.",
+                  },
+                ]}
+              />
             </Box>
-            <BulletedList
-              bullets={[
-                {
-                  note: "Transit",
-                  details:
-                    "Krakow is very walkable and has good public transit. Uber is readily available when needed. A car rental is not required in most cases.",
-                  bullets: [
-                    {
-                      note: "Airport",
-                      details:
-                        "A train runs between Krakow Airport and Krakow Main Station (Główny) and Krakow Grzegórzki station.",
-                    },
-                    {
-                      note: "Streetcars",
-                      details: "TODO Payment process",
-                    },
-                    {
-                      note: "Getting to the wedding venue",
-                      details:
-                        "You can get from Krakow to Wegierksa Gorka Station by train. The station is a 10 minute walk from Beskidian, the wedding venue. The fastest route is 2.5 hours and transfers through Czechowice-Dziedzice. Book in advance.",
-                    },
-                  ],
-                },
-                {
-                  note: "See Poland FAQ",
-                  details:
-                    "for more information and recommendations about traveling in Poland!",
-                },
-              ]}
-            />
           </Stack>
         </Stack>
       </Section>

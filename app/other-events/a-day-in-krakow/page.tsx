@@ -5,6 +5,7 @@ import { useTranslation } from "next-export-i18n";
 
 import ResponsiveSchedule from "@/app/components/ResponsiveSchedule";
 import BulletedList from "@/app/components/BulletedList";
+import Link from "next/link";
 
 function Section(props: BoxProps) {
   return (
@@ -149,12 +150,13 @@ export default function Page() {
                       },
                       {
                         note: "Streetcars",
-                        details: "TODO Payment process",
+                        details:
+                          "Available within Kraków, please pay by card at the machines located on the streetcar or at certain stops.",
                       },
                       {
                         note: "Getting to the wedding venue",
                         details:
-                          "You can get from Krakow to Wegierksa Gorka Station by train. The station is a 10 minute walk from Beskidian, the wedding venue. The fastest route is 2.5 hours and transfers through Czechowice-Dziedzice. Book in advance.",
+                          "You can get from Kraków to Węgierska Górka by car or train. Please see FAQ for more details.",
                       },
                     ],
                   },
@@ -186,22 +188,21 @@ export default function Page() {
                   {
                     note: "Schindler’s Factory",
                     details:
-                      "Former enamel factory and museum about the Nazi occupation and Oscar Schindler’s efforts to save Jewish workers, as seen on Schindler’s List.",
+                      "Former enamel factory and museum about the Nazi occupation and Oscar Schindler’s efforts to save Jewish workers, as seen on Schindler’s List movie.",
                   },
                 ]}
               />
             </Box>
             <Box>
               <Typography>
-                If you will be in Krakow for longer, consider booking a day
-                trip:
+                Planning a longer stay in Kraków? Consider a day trip to:
               </Typography>
               <BulletedList
                 bullets={[
                   {
                     note: "Wieliczka Salt Mine",
                     details:
-                      "UNESCO World Heritage Site Started in the 13th century. Explore an extpansive network of salt cathedrals and caverns.",
+                      "UNESCO World Heritage Site Started in the 13th century. Explore an expansive network of salt cathedrals and caverns.",
                   },
                   {
                     note: "Auschwitz-Birkenau",
@@ -210,6 +211,18 @@ export default function Page() {
                   },
                 ]}
               />
+            </Box>
+            <Box>
+              <Typography>
+                Get a sneak peak of Krakow and more travel recommendations{" "}
+                <Link
+                  href={"/international"}
+                  style={{ textDecoration: "underline" }}
+                >
+                  here
+                </Link>
+                .
+              </Typography>
             </Box>
           </Stack>
         </Stack>

@@ -78,7 +78,7 @@ export default function Page() {
                     {
                       time: "~ Morning",
                       name: "Transit to Beskidian",
-                      location: "Train or shuttle to Wegierska Gorka",
+                      location: "Train or shuttle to Węgierska Górka",
                     },
                     {
                       time: "~ Noon",
@@ -122,14 +122,8 @@ export default function Page() {
                     {
                       time: "~ Afternoon",
                       name: "Free Time",
-                      location: "Beskidian Hotel",
-                    },
-                    {
-                      time: "~ Evening",
-                      name: "Dinner & Celebrations",
                       location:
-                        "Krajcar Brewery, Zywiec. See Welcome Drinks section for details.",
-                      link: "/other-events/welcome-drinks",
+                        "Enjoy Beskidian Hotel or explore Węgierska Górka",
                     },
                     {
                       time: "~ Night",
@@ -143,7 +137,7 @@ export default function Page() {
             />
             <Box>
               <Typography fontWeight={600}>Estimated Costs:</Typography>
-              <Stack spacing={4}>
+              <Stack>
                 <Typography>
                   Costs will not exceed $500 CAD. The following items will be
                   organized for the group and are included in the cost of the
@@ -154,14 +148,14 @@ export default function Page() {
                     { details: "Transit from Krakow to Beskidian" },
                     { details: "Thursday lunch at Beskidian" },
                     { details: "Transit to and from Rysianka trail head" },
-                    { details: "Thursday Dinner at Rysianka" },
+                    { details: "Thursday dinner at Rysianka" },
                     { details: "Thursday night accomodations at Rysianka" },
-                    { details: "Friday Breakfast at Rysianka" },
+                    { details: "Friday breakfast at Rysianka" },
                     { details: "Friday lunch at Beskidian" },
                     { details: "Friday night accomodations at Beskidian" },
                     {
                       details:
-                        "Saturday Brunch at Beskidian (included in accomodations)",
+                        "Saturday brunch at Beskidian (included in accomodations)",
                     },
                   ]}
                 />
@@ -173,7 +167,10 @@ export default function Page() {
                 paid for individually:
               </Typography>
               <BulletedList
-                bullets={[{ details: "Additional drinks/snacks" }]}
+                bullets={[
+                  { details: "Additional drinks/snacks" },
+                  { details: "Friday dinner and free time activities" },
+                ]}
               />
             </Box>
             <Box>
@@ -208,7 +205,7 @@ export default function Page() {
                   {
                     note: "Hike & Preparation",
                     details:
-                      "The hike weaves through the polish foothills and is not overly steep or technical. It is intermediate and about 3-4 hours in each direction. While food and accommodations are provided at Rysianka, you will need to carry any clothes or toiletries",
+                      "This is an intermediate hike and is generally 3-4 hours in each direction. While food and accommodations are provided at Rysianka, you will need to carry any clothes or toiletries up with you. In addition to this please bring:",
                     bullets: [
                       {
                         details:
@@ -225,6 +222,12 @@ export default function Page() {
                 ]}
               />
             </Box>
+            <Typography>
+              This is an optional event. Please be mindful of your comfort and
+              skill-level when RSVPing. If you are attending “A Day in Krakow”
+              but not this event, we recommend extending your stay in Krakow and
+              arriving in Węgierska Górka on Friday or Saturday.
+            </Typography>
             <Grid container spacing={2}>
               {[
                 "/Images/Hiking1.webp",

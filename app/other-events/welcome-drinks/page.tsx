@@ -45,7 +45,9 @@ export default function Page() {
             }}
             spacing={2}
           >
-            <Typography>{t("other-events.welcome-drinks.details")}</Typography>
+            <Typography whiteSpace="pre-line">
+              {t("other-events.welcome-drinks.details")}
+            </Typography>
             <img
               src="/Images/Brewery.webp"
               style={{ objectFit: "contain", padding: "20px 0" }}
