@@ -48,12 +48,17 @@ export default function Page() {
             }}
             spacing={2}
           >
-            <Typography>
-              In honor of Poland’s Mountaineering Culture, we will be holding a
-              combined bachelor/ette celebration at Rysianka Mountain Hut which
-              is located hiking distance from the wedding venue. If you are
-              included in this event it will be listed in your invitation and
-              RSVP. Final schedule will be provided after RSVP.{" "}
+            <Typography whiteSpace="pre-line">
+              In honor of Poland’s Mountaineering Culture, we will be holding an
+              optional bachelor/ette celebration by hiking to Rysianka Mountain
+              Hut in the foothills near the wedding venue. If you are included
+              in this event it will be listed in your invitation and RSVP.{" "}
+              <u>
+                Space is limited and will be first-come-first-serve based on
+                RSVP date.
+              </u>
+              {`\n\n`}
+              Final confirmation and schedule will be provided after RSVP.
             </Typography>
             <ResponsiveSchedule
               wideTime
@@ -139,7 +144,7 @@ export default function Page() {
               <Typography fontWeight={600}>Estimated Costs:</Typography>
               <Stack>
                 <Typography>
-                  Costs will not exceed $500 CAD. The following items will be
+                  Costs will not exceed $400 CAD. The following items will be
                   organized for the group and are included in the cost of the
                   Bachelor/ette:
                 </Typography>
@@ -195,7 +200,7 @@ export default function Page() {
                   {
                     note: "Accommodations",
                     details:
-                      "Rysianka is a traditional Polish mountain shelter with rustic, hostel-style accomodations. Sheets and bedding will be provided but towels may not be. Charger plugs are limitted and may not be available in all rooms; a portable battery is recommended. Rooms will be assigned after RSVP. ",
+                      "Rysianka is a traditional Polish mountain shelter with rustic, hostel-style accomodations. Sheets and bedding will be provided but towels may not be. Charger plugs are limited and may not be available in all rooms; a portable battery is recommended. Rooms will be assigned after RSVP. ",
                   },
                   {
                     note: "Food",
