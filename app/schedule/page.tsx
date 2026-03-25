@@ -100,7 +100,7 @@ function CeremonySection({ id }: { id?: string }) {
   const information = [
     {
       header: t("schedule.ceremony-section.address.header"),
-      info: t("schedule.ceremony-section.address.header"),
+      info: t("schedule.ceremony-section.address.info"),
     },
     {
       header: t("schedule.ceremony-section.time.header"),
