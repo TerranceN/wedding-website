@@ -443,6 +443,7 @@ function TimelineSection({ id }: { id?: string }) {
 
 function RSVPSection({ id }: { id?: string }) {
   const { t } = useTranslation();
+  const { lang } = useSelectedLanguage();
 
   return (
     <Section
@@ -461,7 +462,7 @@ function RSVPSection({ id }: { id?: string }) {
         <Link href="https://withjoy.com/terrance-and-paula/rsvp">
           <Box sx={{ position: "relative" }}>
             <img
-              src="/Images/Letter Asset.webp"
+              src={`/Images/Letter-${lang}.webp`}
               style={{
                 position: "relative",
                 objectFit: "contain",
@@ -470,45 +471,21 @@ function RSVPSection({ id }: { id?: string }) {
                 maxHeight: "70svh",
               }}
             />
-            <Stack
-              sx={{
-                position: "absolute",
-                top: "17vh",
-              }}
-              width="100%"
-              alignItems="center"
-            >
-              <Typography
-                color="#2D2B25"
-                textTransform="uppercase"
-                fontSize="3vh"
-              >
-                {t("rsvp-section.click-here")}
-              </Typography>
-            </Stack>
-            <Stack
-              sx={{
-                position: "absolute",
-                top: "57vh",
-              }}
-              width="100%"
-              alignItems="center"
-            >
-              <Typography color="#2D2B25" fontSize="4vh">
-                {t("rsvp-section.respond-by")}
-              </Typography>
-            </Stack>
           </Box>
         </Link>
         <Stack direction="row" spacing={2}>
-          <Typography color="#FFFFFF" fontSize="4vh" textTransform="uppercase">
+          <Typography
+            color="#FFFFFF"
+            fontSize="4vmin"
+            textTransform="uppercase"
+          >
             {t("rsvp-section.questions")}
           </Typography>
-          <Typography color="#FFFFFF" fontSize="4vh">
+          <Typography color="#FFFFFF" fontSize="4vmin">
             |
           </Typography>
           <Link href="mailto:paula.and.terrance@gmail.com">
-            <Typography color="#FFFFFF" fontSize="4vh">
+            <Typography color="#FFFFFF" fontSize="4vmin">
               paula.and.terrance@gmail.com
             </Typography>
           </Link>
