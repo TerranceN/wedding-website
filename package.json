@@ -4,16 +4,20 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && touch out/.nojekyll",
+    "build": "yarn translations && next build && touch out/.nojekyll",
     "start": "next start",
     "lint": "eslint",
-    "format": "prettier --write app"
+    "format": "prettier --write app",
+    "translations": "tsx ./i18n/generate/index.ts",
+    "translations:watch": "tsx --watch --watch-path ./i18n/generate ./i18n/generate/index.ts"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.1",
     "@mui/icons-material": "^7.3.8",
     "@mui/material": "^7.3.7",
+    "markdown-to-jsx": "^9.7.13",
+    "mui-markdown": "^2.1.1",
     "next": "16.1.1",
     "next-export-i18n": "^3",
     "react": "19.2.3",
@@ -28,6 +32,7 @@
     "eslint-config-next": "16.1.1",
     "prettier": "^3.8.1",
     "tailwindcss": "^4",
+    "tsx": "^4.21.0",
     "typescript": "^5",
     "typescript-eslint-language-service": "^5.0.5"
   }

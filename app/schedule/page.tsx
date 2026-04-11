@@ -53,6 +53,7 @@ function TitleSection({ id }: { id?: string }) {
       >
         <Typography
           fontFamily="Messaline"
+          color="#faf1e1"
           fontSize={{
             xs: 60,
             sm: 75,

@@ -1,4 +1,6 @@
-{
+import loadMarkdown from "./loadMarkdown";
+
+export default {
   "home": "Home",
   "common": {
     "dates": {
@@ -273,6 +275,28 @@
   "international": {
     "title-section": {
       "title": "International\nFAQ"
+    },
+    "welcome-section": {
+      "content": loadMarkdown('./i18n/generate/poland-welcome.en.md')
+    },
+    "poland-faq-section": {
+      "content": loadMarkdown('./i18n/generate/poland-faq.en.md')
+    },
+    "polish-weddings-section": {
+      "content": loadMarkdown('./i18n/generate/polish-weddings.en.md')
+    },
+    "cheat-sheet-section": {
+      "letters": loadMarkdown('./i18n/generate/cheat-sheet-letters.en.md'),
+      "key-words": loadMarkdown('./i18n/generate/cheat-sheet-key-words.en.md'),
+    },
+    "travelling-poland-section": {
+      "content": loadMarkdown('./i18n/generate/travelling-poland.en.md'),
+    },
+    "international-travel-section": {
+      "content": loadMarkdown('./i18n/generate/international-travel.en.md'),
+    },
+    "hiking-guide-section": {
+      "content": loadMarkdown('./i18n/generate/hiking-guide.en.md'),
     }
   }
 }

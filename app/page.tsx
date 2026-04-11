@@ -50,6 +50,7 @@ function TitleSection({ id }: { id?: string }) {
       >
         <Typography
           fontFamily="Messaline"
+          color="#faf1e1"
           fontSize={{
             xs: 70,
             sm: 90,
@@ -62,6 +63,7 @@ function TitleSection({ id }: { id?: string }) {
         </Typography>
         <Stack direction="row" spacing={4}>
           <Typography
+            color="#faf1e1"
             fontSize={{
               xs: 18,
               sm: 24,
@@ -70,6 +72,7 @@ function TitleSection({ id }: { id?: string }) {
             {t("title-section.date")}
           </Typography>
           <Typography
+            color="#faf1e1"
             fontSize={{
               xs: 18,
               sm: 24,
@@ -78,6 +81,7 @@ function TitleSection({ id }: { id?: string }) {
             |
           </Typography>
           <Typography
+            color="#faf1e1"
             fontSize={{
               xs: 18,
               sm: 24,
