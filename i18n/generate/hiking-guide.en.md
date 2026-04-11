@@ -16,7 +16,7 @@ Poland has a strong hiking culture and there are over 100 remote huts (“schron
 There are seven mountain huts located on the Polish side of Tatra National Park, but only a few are located in the alpine region known as the High Tatras (“Wysokie Tatry”) which is where are recommendations are focused. These huts are very popular and we recommend booking well in advance.
 
 ###### Planning your Route
-In this section we will cover our recommended route, as well as alternative options and tips. The official hiking map (LINK) will be your friend, but below is a high level overview of the options.
+In this section we will cover our recommended route, as well as alternative options and tips. The [official hiking map](https://mapa-turystyczna.pl/#49.21526/20.07290/15) will be your friend, but below is a high level overview of the options.
 <br/>
 <br/>
 **Zakopane**

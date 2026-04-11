@@ -223,6 +223,10 @@ function PolandWelcomeSection({ id }: { id?: string }) {
                   sm: "left !important",
                 },
               },
+              a: {
+                color: "#2D2B25",
+                textDecorationColor: "#2D2B25",
+              },
             }}
           >
             {t("international.welcome-section.content")}
