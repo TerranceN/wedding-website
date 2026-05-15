@@ -62,41 +62,76 @@ function NavigationBar() {
               sx={{
                 width: "100%",
                 justifyContent: "flex-end",
+                paddingTop: "8px",
+                ".MuiListItem-root": {
+                  paddingTop: "6px",
+                  paddingBottom: "6px",
+                },
+                ".MuiListItem-root .MuiListItem-root": {
+                  paddingTop: "6px",
+                  paddingBottom: 0,
+                },
+                ".MuiList-root": {
+                  padding: 0,
+                },
               }}
             >
               <List>
                 <ListItem>
-                  <Link href="/">{t("home")}</Link>
+                  <Stack>
+                    <Link href="/">
+                      <Typography>{t("home")}</Typography>
+                    </Link>
+                    <List>
+                      <ListItem>
+                        <Link href="/#rsvp">
+                          <Typography>RSVP</Typography>
+                        </Link>
+                      </ListItem>
+                    </List>
+                  </Stack>
                 </ListItem>
                 <ListItem>
                   <Link href="/schedule">
-                    {t("schedule.title-section.wedding-details")}
+                    <Typography>
+                      {t("schedule.title-section.wedding-details")}
+                    </Typography>
                   </Link>
                 </ListItem>
                 <ListItem>
                   <Stack>
                     <Link href="/other-events">
-                      {t("other-events.title-section.other-events")}
+                      <Typography>
+                        {t("other-events.title-section.other-events")}
+                      </Typography>
                     </Link>
                     <List>
                       <ListItem>
                         <Link href="/other-events/bridal-party-meetup">
-                          {t("other-events.bridal-party-meetup.title")}
+                          <Typography>
+                            {t("other-events.bridal-party-meetup.title")}
+                          </Typography>
                         </Link>
                       </ListItem>
                       <ListItem>
                         <Link href="/other-events/a-day-in-krakow">
-                          {t("other-events.a-day-in-krakow.title")}
+                          <Typography>
+                            {t("other-events.a-day-in-krakow.title")}
+                          </Typography>
                         </Link>
                       </ListItem>
                       <ListItem>
                         <Link href="/other-events/bachelor-ette">
-                          {t("other-events.bachelor-ette.title")}
+                          <Typography>
+                            {t("other-events.bachelor-ette.title")}
+                          </Typography>
                         </Link>
                       </ListItem>
                       <ListItem>
                         <Link href="/other-events/welcome-drinks">
-                          {t("other-events.welcome-drinks.title")}
+                          <Typography>
+                            {t("other-events.welcome-drinks.title")}
+                          </Typography>
                         </Link>
                       </ListItem>
                     </List>
@@ -110,7 +145,9 @@ function NavigationBar() {
                   }}
                 >
                   <Link href="/international">
-                    {t("international.title-section.title")}
+                    <Typography>
+                      {t("international.title-section.title")}
+                    </Typography>
                   </Link>
                 </ListItem>
               </List>
