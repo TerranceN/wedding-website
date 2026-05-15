@@ -44,7 +44,7 @@ export default {
   },
   "intro-section": {
     "title": "Witamy!",
-    "intro": "Pobieramy się w Polsce, aby uczcić nasze wspólne korzenie oraz naszą przyszłość razem.\n\nMamy nadzieję, że będziecie mogli do nas dołączyć w tym wyjątkowym dniu!"
+    "intro": "Pobieramy się w Polsce, by uczcić nasze wspólne korzenie i to, co dopiero przed nami.\n\nMamy nadzieję, że będziecie mogli do nas dołączyć w tym wyjątkowym dniu!"
   },
   "timeline-section": {
     "title": "Zapraszamy!",
@@ -87,7 +87,7 @@ export default {
   },
   "schedule": {
     "title-section": {
-      "wedding-details": "Detale ślubu"
+      "wedding-details": "Szczegóły ślubu"
     },
     "ceremony-section": {
       "title": "Ceremonia",
@@ -101,11 +101,11 @@ export default {
       },
       "getting-there": {
         "header": "Dojazd",
-        "info": "Pomiędzy Zamkiem w Żywcu a Beskidianem będą kursować bezpłatne busy dla gości. W pobliżu Zamku jest ograniczona ilość parkingów samochodowych."
+        "info": "Pomiędzy Zamkiem w Żywcu a Beskidianem będą kursować bezpłatne busy dla gości. W pobliżu Zamku jest ograniczona miejsc parkingowych."
       },
       "notes": {
         "header": "Uwagi",
-        "info": "Ceremonia będzie miała charakter symboliczny i odbędzie się na dziedzińcu zamku. Prosimy o strój odpowiedni na wydarzenie na świeżym powietrzu."
+        "info": "Ceremonia będzie miała charakter symboliczny i odbędzie się na dziedzińcu zamku — na świeżym powietrzu, więc warto wziąć to pod uwagę przy wyborze stroju."
       }
     },
     "reception-section": {
@@ -143,7 +143,7 @@ export default {
       },
       "getting-there": {
         "header": "Dotarcie tam",
-        "info": "Hotel Beskidian oferuje bezpłatny parking. Beskidian znajduje się około 10 minut na piechotę od stacji kolejowej Węgierska Górka, która oferuje połączenia z miastami takimi jak Kraków i Katowice."
+        "info": "Hotel Beskidian oferuje bezpłatny parking i znajduje się około 10 minut spacerem od stacji kolejowej Węgierska Górka, skąd kursują pociągi m.in. do Krakowa i Katowic."
       },
       "accommodations": {
         "header": "Noclegi",
@@ -151,7 +151,7 @@ export default {
       },
       "notes": {
         "header": "Uwagi",
-        "info": "Koktajl powitalny oraz poprawiny odbędą się w altanie na świeżym powietrzu, dlatego prosimy o odpowiedni strój."
+        "info": "Koktajl powitalny i poprawiny odbędą się w altanie w plenerze — warto wziąć to pod uwagę i ubrać się nieco cieplej."
       }
     },
     "faq": {
@@ -179,7 +179,7 @@ export default {
       },
       "plus-ones": {
         "header": "Osoby Towarzyszące",
-        "details": "Serdecznie zapraszamy do udziału w weselu wraz z osobami towarzyszącymi. Jeśli na Waszym zaproszeniu nie widnieje jeszcze imię i nazwisko osoby towarzyszącej, prosimy o uzupełnienie tych informacji podczas wypełniania RSVP."
+        "details": "Serdecznie zapraszamy Was również z osobami towarzyszącymi. Jeśli ich imiona i nazwiska nie zostały jeszcze wskazane w zaproszeniu, prosimy o uzupełnienie ich w formularzu RSVP."
       },
       "children": {
         "header": "Dzieci",
@@ -187,11 +187,11 @@ export default {
       },
       "dress-code": {
         "header": "Dress Code",
-        "details": "Styl koktajlowy z nutą romantyzmu.  Prosimy przygotować się zarówno na tańce, jak i na wydarzenia na świeżym powietrzu. Ceremonia odbędzie się na dziedzińcu zamku z nierówną brukowaną nawierzchnią, a koktajl powitalny na trawniku.\n\nProsimy unikać koloru białego, kremowego oraz bardzo jaskrawych kolorów, ze względu na historyczny charakter miejsca ceremonii."
+        "details": "Styl koktajlowy z nutą romantyzmu. Warto dobrać strój z myślą o różnych okolicznościach — część dnia spędzimy na świeżym powietrzu, dziedziniec zamku ma nierówną, brukowaną nawierzchnię, koktajl powitalny zaplanowaliśmy na trawniku, a wieczorem czeka nas taneczna część przyjęcia."
       },
       "registry": {
         "header": "Upominki",
-        "details": "Najpiękniejszym prezentem będzie dla nas Wasza obecność. Jeśli jednak planujecie upominek, prosimy o formę pieniężną zamiast prezentów rzeczowych – ze względu na nasz powrotny lot do domu, nie będziemy w stanie ich ze sobą zabrać.\nDarowizny można przekazać do pudełka na kartki w trakcie wesela lub drogą elektroniczną na adres: paula.and.terrance@gmail.com. Dziękujemy za wyrozumiałość!"
+        "details": "Najpiękniejszym prezentem będzie dla nas Wasza obecność. Jeżeli jednak zależy Wam na obdarowaniu nas, zachęcamy wesprzeć naszą skarbonkę przeznaczoną na podróż poślubną. Ze względu na powrotny lot do domu, nie będziemy w stanie ze sobą zabrać prezentów rzeczowych. Podarunki można przekazać do specjalnego pudełka w trakcie wesela lub drogą elektroniczną na adres: paula.and.terrance@gmail.com. Dziękujemy za wyrozumiałość!"
       }
     }
   },
@@ -204,7 +204,7 @@ export default {
       "description": "Zaplanowaliśmy kilka spotkań przed weselem dla rodziny, przyjaciół i gości przybywających z daleka. Szczegółową listę wydarzeń na które jesteście zaproszeni, znajdziecie w zaproszeniu.",
       "bridal-party-meetup": {
         "title": "Bridal Party",
-        "description": "Spotkanie dla druchen i druchów"
+        "description": "Spotkanie dla druchen i drużbów"
       },
       "a-day-in-krakow": {
         "title": "Dzień w Krakówie",
@@ -224,7 +224,7 @@ export default {
       },
       "after-party": {
         "title": "Poprawiny",
-        "description": "Obiad i pożegnanie gości"
+        "description": "Grill i pożegnanie gości"
       }
     },
     "bridal-party-meetup": {
@@ -238,7 +238,7 @@ export default {
     },
     "welcome-drinks": {
       "title": "Wieczór Powitalny",
-      "details": "Organizujemy nieformalne spotkanie w przeddzień wesela dla rodziny oraz osób z orszaku ślubnego w Browarze Krajcar w Żywcu. Zapewniamy transport z hotelu Beskidian – dokładne godziny odjazdu podamy bliżej terminu wydarzenia. Posiłki oraz napoje można zakupić na miejscu we własnym zakresie."
+      "details": "Organizujemy swobodne spotkanie dzień przed oficjalnym rozpoczęciem uroczystości dla rodziny oraz osób z orszaku ślubnego w Browarze Krajcar w Żywcu. To świetna okazja, aby lepiej się poznać, przy drinku lub przekąskach.\n\nZapewniamy transport z hotelu Beskidian – dokładne godziny odjazdu podamy bliżej terminu wydarzenia. Posiłki oraz napoje można zakupić na miejscu we własnym zakresie."
     }
   },
   "international": {
