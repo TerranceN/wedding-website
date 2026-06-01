@@ -202,7 +202,7 @@ function WeekAtAGlanceSection({ id }: { id?: string }) {
                     name: t(
                       "other-events.schedule-section.welcome-drinks.title",
                     ),
-                    location: "Kraków",
+                    location: "Żywiec",
                     notes: t(
                       "other-events.schedule-section.welcome-drinks.description",
                     ),
