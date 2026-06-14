@@ -121,7 +121,7 @@ export default {
       "location": "Beskidian, Węgierska Górka",
       "address": {
         "header": "Address",
-        "info": "Zamkowa 2, 34-300 Żywiec, Poland"
+        "info": "3 Maja 12, 34-350 Węgierska Górka, Poland"
       },
       "time": {
         "header": "Time",
