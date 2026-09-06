@@ -67,19 +67,24 @@ export default function Page() {
                   },
                   events: [
                     {
-                      time: "~ Afternoon",
+                      time: "~ 12:00",
                       name: "Meet & Greet",
                       location: "Kraków",
                     },
                     {
-                      time: "~ Afternoon",
+                      time: "13:30",
+                      name: "Depart for Wieliczka",
+                      location: "Kraków Grzegórzki Station",
+                    },
+                    {
+                      time: "14:45",
                       name: "Miner's Route",
                       location: "Wieliczka Salt Mine",
                     },
                     {
-                      time: "~ Evening",
+                      time: "18:00",
                       name: "Dinner & Drinks",
-                      location: "Kraków Old Town",
+                      location: "Stara Zajezdnia Kraków",
                     },
                   ],
                 },

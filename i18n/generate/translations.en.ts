@@ -78,7 +78,7 @@ export default {
     },
     "transportation": {
       "title": "Transportation",
-      "additional-info": "Shuttles between Zywiec and Beskidian provided"
+      "additional-info": "Shuttles between Żywiec and Beskidian provided"
     },
     "dress-code": {
       "title": "Dress Code",
@@ -269,7 +269,35 @@ export default {
     },
     "welcome-drinks": {
       "title": "Rehearsal Drinks",
-      "details": "We will be having an informal gathering for family and bridal party members the evening before the wedding at Krajcar Brewery in Żywiec. We’d like to give the families a chance to get to meet each other and the bride and groom before the official ceremony.\n\nIf you are included in this event it will be listed in your invitation and RSVP. Transportation will be available from Beskidian with exact timing provided closer to the date. Food and drinks can be purchased individually. "
+      "details": "We will be having an informal gathering for family and bridal party members the evening before the wedding at Krajcar Brewery in Żywiec. We’d like to give the families a chance to get to meet each other and the bride and groom before the official ceremony.\n\nTransportation will be provided between Beskidian and Krajcar. Food and drinks can be purchased individually.",
+      "schedule": {
+        "day": {
+          "name": "Friday",
+          "date": "Sept 11th, 2026",
+        },
+        "events": {
+          "bp-shuttle": {
+            "name": "Bridal Party Shuttle to Ceremony Venue",
+            "location": "Beskidian"
+          },
+          "family-shuttle": {
+            "name": "Family Shuttle to Krajcar",
+            "location": "Beskidian"
+          },
+          "dinner": {
+            "name": "Dinner",
+            "location": "Krajcar Brewery Żywiec"
+          },
+          "return-shuttle": {
+            "name": "First Shuttle to Beskidian",
+            "location": "Krajcar Brewery Żywiec"
+          },
+          "last-return-shuttle": {
+            "name": "Last Shuttle to Beskidian",
+            "location": "Krajcar Brewery Żywiec"
+          }
+        }
+      }
     }
   },
   "international": {

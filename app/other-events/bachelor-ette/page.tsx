@@ -76,30 +76,40 @@ export default function Page() {
                   },
                   events: [
                     {
-                      time: "~ Morning",
+                      time: "9:00",
                       name: "Meet In Krakow",
-                      location: "Likely at Train Station",
+                      location: "Sheraton Grand Krakow",
                     },
                     {
-                      time: "~ Morning",
+                      time: "9:15",
                       name: "Transit to Beskidian",
-                      location: "Train or shuttle to Węgierska Górka",
+                      location: "Shuttle to Beskidian in Węgierska Górka",
                     },
                     {
-                      time: "~ Noon",
+                      time: "12:00",
                       name: "Lunch",
                       location: "Lunch at Beskidian Hotel and luggage drop-off",
                     },
                     {
-                      time: "~ Afternoon",
-                      name: "Hiking",
-                      location:
-                        "~3 hour intermediate hike to Rysianka mountain hut",
+                      time: "13:00",
+                      name: "Shuttle to trailhead",
+                      location: "Beskidian Hotel",
                     },
                     {
-                      time: "~ Evening",
+                      time: "13:30",
+                      name: "Hiking",
+                      location:
+                        "~4 hour intermediate hike to Rysianka mountain hut",
+                    },
+                    {
+                      time: "18:00",
                       name: "Dinner & Celebrations",
                       location: "Overnight at Rysianka mountain hut",
+                    },
+                    {
+                      time: "19:00",
+                      name: "Evening Activities",
+                      location: "Rysianka mountain hut",
                     },
                   ],
                 },
@@ -110,28 +120,38 @@ export default function Page() {
                   },
                   events: [
                     {
-                      time: "~ Morning",
+                      time: "8:00",
                       name: "Breakfast",
                       location: "Rysianka Mountain Hut",
                     },
                     {
-                      time: "~ Morning",
+                      time: "9:00",
                       name: "Hiking",
+                      location: "Return to trailhead",
+                    },
+                    {
+                      time: "12:00",
+                      name: "Shuttle back to Beskidian",
                       location: "Return to Beskidian Hotel",
                     },
                     {
-                      time: "~ Noon",
-                      name: "Lunch & Check-in",
+                      time: "12:30",
+                      name: "Lunch",
                       location: "Beskidian Hotel",
                     },
                     {
-                      time: "~ Afternoon",
+                      time: "15:00",
+                      name: "Check-in",
+                      location: "Beskidian Hotel",
+                    },
+                    {
+                      time: "Afternoon",
                       name: "Free Time",
                       location:
                         "Enjoy Beskidian Hotel or explore Węgierska Górka",
                     },
                     {
-                      time: "~ Night",
+                      time: "Night",
                       name: "Night at Beskidian",
                       location:
                         "Additional night at Beskidian hotel included in cost of Bachelor/ette",

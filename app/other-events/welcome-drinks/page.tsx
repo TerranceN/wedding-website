@@ -1,5 +1,6 @@
 "use client";
 
+import ResponsiveSchedule from "@/app/components/ResponsiveSchedule";
 import { Box, Stack, Typography, type BoxProps } from "@mui/material";
 import { useTranslation } from "next-export-i18n";
 
@@ -48,6 +49,69 @@ export default function Page() {
             <Typography whiteSpace="pre-line">
               {t("other-events.welcome-drinks.details")}
             </Typography>
+            <ResponsiveSchedule
+              wideTime
+              dayPadding={{
+                sm: "10px 0",
+                xs: 0,
+              }}
+              spacing="30px"
+              events={[
+                {
+                  day: {
+                    name: t("common.dates.friday.name"),
+                    date: t("common.dates.friday.xshort"),
+                  },
+                  events: [
+                    {
+                      time: "14:00",
+                      name: t(
+                        "other-events.welcome-drinks.schedule.events.bp-shuttle.name",
+                      ),
+                      location: t(
+                        "other-events.welcome-drinks.schedule.events.bp-shuttle.location",
+                      ),
+                    },
+                    {
+                      time: "18:00",
+                      name: t(
+                        "other-events.welcome-drinks.schedule.events.family-shuttle.name",
+                      ),
+                      location: t(
+                        "other-events.welcome-drinks.schedule.events.family-shuttle.location",
+                      ),
+                    },
+                    {
+                      time: "18:30",
+                      name: t(
+                        "other-events.welcome-drinks.schedule.events.dinner.name",
+                      ),
+                      location: t(
+                        "other-events.welcome-drinks.schedule.events.dinner.location",
+                      ),
+                    },
+                    {
+                      time: "20:00",
+                      name: t(
+                        "other-events.welcome-drinks.schedule.events.return-shuttle.name",
+                      ),
+                      location: t(
+                        "other-events.welcome-drinks.schedule.events.return-shuttle.location",
+                      ),
+                    },
+                    {
+                      time: "20:45",
+                      name: t(
+                        "other-events.welcome-drinks.schedule.events.last-return-shuttle.name",
+                      ),
+                      location: t(
+                        "other-events.welcome-drinks.schedule.events.last-return-shuttle.location",
+                      ),
+                    },
+                  ],
+                },
+              ]}
+            />
             <img
               src="/Images/Brewery.webp"
               style={{ objectFit: "contain", padding: "20px 0" }}

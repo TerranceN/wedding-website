@@ -20,7 +20,8 @@ export default {
       "friday": {
         "name": "Piątek",
         "date": "11 wrz 2026 r.",
-        "short": "Pt. wrz 11"
+        "short": "Pt. wrz 11",
+        "xshort": "wrz 11"
       },
       "saturday": {
         "name": "Sobota",
@@ -238,7 +239,35 @@ export default {
     },
     "welcome-drinks": {
       "title": "Wieczór Powitalny",
-      "details": "Organizujemy swobodne spotkanie dzień przed oficjalnym rozpoczęciem uroczystości dla rodziny oraz osób z orszaku ślubnego w Browarze Krajcar w Żywcu. To świetna okazja, aby lepiej się poznać, przy drinku lub przekąskach.\n\nZapewniamy transport z hotelu Beskidian – dokładne godziny odjazdu podamy bliżej terminu wydarzenia. Posiłki oraz napoje można zakupić na miejscu we własnym zakresie."
+      "details": "Organizujemy swobodne spotkanie dzień przed oficjalnym rozpoczęciem uroczystości dla rodziny oraz osób z orszaku ślubnego w Browarze Krajcar w Żywcu. To świetna okazja, aby lepiej się poznać, przy drinku lub przekąskach.\n\nZapewniamy transport z hotelu Beskidian – dokładne godziny odjazdu podamy bliżej terminu wydarzenia. Posiłki oraz napoje można zakupić na miejscu we własnym zakresie.",
+      "schedule": {
+        "day": {
+          "name": "Piątek",
+          "date": "Sept 11th, 2026",
+        },
+        "events": {
+          "bp-shuttle": {
+            "name": "Transport dla druhen do Starego Zamku",
+            "location": "Beskidian"
+          },
+          "family-shuttle": {
+            "name": "Rodzinny autobus do Krajcar",
+            "location": "Beskidian"
+          },
+          "dinner": {
+            "name": "Kolacja",
+            "location": "Krajcar Brewery Żywiec"
+          },
+          "return-shuttle": {
+            "name": "Pierwszy autobus do Beskidianu",
+            "location": "Krajcar Brewery Żywiec"
+          },
+          "last-return-shuttle": {
+            "name": "Ostatni autobus do Beskidianu",
+            "location": "Krajcar Brewery Żywiec"
+          }
+        }
+      }
     }
   },
   "international": {

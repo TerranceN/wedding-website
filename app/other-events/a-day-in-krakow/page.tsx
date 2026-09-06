@@ -71,35 +71,36 @@ export default function Page() {
                   },
                   events: [
                     {
-                      time: "~ Morning",
+                      time: "8:45",
                       name: "Meet & Greet",
-                      location: "Krakow Old Town",
+                      location: "Cafe Camelot",
                     },
                     {
-                      time: "~ Morning",
-                      name: "Walking Tour",
+                      time: "9:00",
+                      name: "Scavenger Hunt",
                       location: "Krakow Old Town and Wawel Castle",
                     },
                     {
-                      time: "~ Noon",
-                      name: "Lunch",
-                      location:
-                        "Authentic Milkbar in Krakow’s student district ",
+                      time: "11:00",
+                      name: "End of Scavenger Hunt",
+                      location: "Wawel Castle",
                     },
                     {
-                      time: "~ Afternoon",
+                      time: "12:00",
+                      name: "Lunch",
+                      location:
+                        "Authentic Milkbar Żaczek in Krakow’s student district",
+                    },
+                    {
+                      time: "13:30",
                       name: "Free Time",
                       location: "Explore Krakow on your own or rest",
                     },
                     {
-                      time: "~ Evening",
-                      name: "Dinner",
-                      location: "Group dinner in Krakow’s Jewish district",
-                    },
-                    {
-                      time: "~ Evening",
-                      name: "Drinks",
-                      location: "Beer garden in Krakow’s Jewish district",
+                      time: "18:00",
+                      name: "Dinner & Drinks",
+                      location:
+                        "Group dinner at Hamsa in Krakow’s Jewish district",
                     },
                   ],
                 },
