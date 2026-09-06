@@ -20,8 +20,7 @@ export default {
       "friday": {
         "name": "Piątek",
         "date": "11 wrz 2026 r.",
-        "short": "Pt. wrz 11",
-        "xshort": "wrz 11"
+        "short": "Pt. wrz 11"
       },
       "saturday": {
         "name": "Sobota",

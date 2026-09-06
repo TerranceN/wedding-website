@@ -60,7 +60,7 @@ export default function Page() {
                 {
                   day: {
                     name: t("common.dates.friday.name"),
-                    date: t("common.dates.friday.xshort"),
+                    date: t("common.dates.friday.date"),
                   },
                   events: [
                     {
